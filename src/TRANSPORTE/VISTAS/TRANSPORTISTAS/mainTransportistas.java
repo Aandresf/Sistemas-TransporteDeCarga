@@ -122,7 +122,6 @@ public class mainTransportistas extends javax.swing.JPanel {
         txtFilterSede1.setOpaque(true);
         pnlMain1.add(txtFilterSede1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 280, 40));
 
-        btnSearch2.setBackground(new java.awt.Color(242, 242, 242));
         btnSearch2.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         btnSearch2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/iconSearch.png"))); // NOI18N
         btnSearch2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -192,7 +191,6 @@ public class mainTransportistas extends javax.swing.JPanel {
         txtFilterSede2.setOpaque(true);
         pnlMain2.add(txtFilterSede2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 280, 40));
 
-        btnSearch3.setBackground(new java.awt.Color(242, 242, 242));
         btnSearch3.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         btnSearch3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/iconSearch.png"))); // NOI18N
         btnSearch3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));

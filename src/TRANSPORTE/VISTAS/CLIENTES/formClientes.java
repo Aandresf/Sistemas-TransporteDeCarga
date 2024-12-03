@@ -68,9 +68,7 @@ public class formClientes extends javax.swing.JFrame {
         lblNombre1.setText("NOMBRE");
 
         txtNombrePersona.setBackground(new java.awt.Color(250, 250, 250));
-        txtNombrePersona.setForeground(new java.awt.Color(0, 0, 0));
         txtNombrePersona.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(102, 102, 102), 1, true));
-        txtNombrePersona.setCaretColor(new java.awt.Color(0, 0, 0));
         txtNombrePersona.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         txtNombrePersona.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         txtNombrePersona.setOpaque(true);
@@ -79,17 +77,13 @@ public class formClientes extends javax.swing.JFrame {
         lblCedula3.setText("DOCUMENTO");
 
         txtDocumentoPersona.setBackground(new java.awt.Color(250, 250, 250));
-        txtDocumentoPersona.setForeground(new java.awt.Color(0, 0, 0));
         txtDocumentoPersona.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(102, 102, 102), 1, true));
-        txtDocumentoPersona.setCaretColor(new java.awt.Color(0, 0, 0));
         txtDocumentoPersona.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         txtDocumentoPersona.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         txtDocumentoPersona.setOpaque(true);
 
         txtTelefonoPersona.setBackground(new java.awt.Color(250, 250, 250));
-        txtTelefonoPersona.setForeground(new java.awt.Color(0, 0, 0));
         txtTelefonoPersona.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(102, 102, 102), 1, true));
-        txtTelefonoPersona.setCaretColor(new java.awt.Color(0, 0, 0));
         txtTelefonoPersona.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         txtTelefonoPersona.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         txtTelefonoPersona.setOpaque(true);
@@ -106,9 +100,7 @@ public class formClientes extends javax.swing.JFrame {
         lblCategoria6.setText("CORREO");
 
         txtCorreoPersona.setBackground(new java.awt.Color(250, 250, 250));
-        txtCorreoPersona.setForeground(new java.awt.Color(0, 0, 0));
         txtCorreoPersona.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(102, 102, 102), 1, true));
-        txtCorreoPersona.setCaretColor(new java.awt.Color(0, 0, 0));
         txtCorreoPersona.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         txtCorreoPersona.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         txtCorreoPersona.setOpaque(true);
@@ -165,8 +157,8 @@ public class formClientes extends javax.swing.JFrame {
                         .addGroup(pnlUser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(pnlUser1Layout.createSequentialGroup()
                                 .addComponent(lblCedula3, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(txtDocumentoPersona, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(txtDocumentoPersona, javax.swing.GroupLayout.PREFERRED_SIZE, 178, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
                                 .addComponent(lblNombre1, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(pnlUser1Layout.createSequentialGroup()
@@ -228,7 +220,7 @@ public class formClientes extends javax.swing.JFrame {
                 .addGroup(pnlUser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lblCategoria7)
                     .addComponent(jcbxTipoPersona, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 71, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 65, Short.MAX_VALUE)
                 .addGroup(pnlUser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btnCancelFormPersona, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnCleanFormPersona, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)

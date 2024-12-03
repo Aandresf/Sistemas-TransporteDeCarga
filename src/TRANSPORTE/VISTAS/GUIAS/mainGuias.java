@@ -126,7 +126,7 @@ public class mainGuias extends javax.swing.JPanel {
         btnHeader4.setBorder(null);
         btnHeader4.setBorderPainted(false);
         btnHeader4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        pnlHeader.add(btnHeader4, new org.netbeans.lib.awtextra.AbsoluteConstraints(598, 0, 196, 70));
+        pnlHeader.add(btnHeader4, new org.netbeans.lib.awtextra.AbsoluteConstraints(598, 0, 240, 70));
 
         add(pnlHeader, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 70));
 
@@ -207,7 +207,6 @@ public class mainGuias extends javax.swing.JPanel {
         txtFilterSede3.setOpaque(true);
         subMain1.add(txtFilterSede3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 280, 40));
 
-        btnSearch4.setBackground(new java.awt.Color(242, 242, 242));
         btnSearch4.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         btnSearch4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/iconSearch.png"))); // NOI18N
         btnSearch4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -279,7 +278,6 @@ public class mainGuias extends javax.swing.JPanel {
         txtFilterSede7.setOpaque(true);
         pnlMain2.add(txtFilterSede7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 280, 40));
 
-        btnSearch8.setBackground(new java.awt.Color(242, 242, 242));
         btnSearch8.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         btnSearch8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/iconSearch.png"))); // NOI18N
         btnSearch8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -349,7 +347,6 @@ public class mainGuias extends javax.swing.JPanel {
         txtFilterSede4.setOpaque(true);
         pnlMain3.add(txtFilterSede4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 280, 40));
 
-        btnSearch5.setBackground(new java.awt.Color(242, 242, 242));
         btnSearch5.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         btnSearch5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/iconSearch.png"))); // NOI18N
         btnSearch5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -419,7 +416,6 @@ public class mainGuias extends javax.swing.JPanel {
         txtFilterSede5.setOpaque(true);
         pnlMain4.add(txtFilterSede5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 280, 40));
 
-        btnSearch6.setBackground(new java.awt.Color(242, 242, 242));
         btnSearch6.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         btnSearch6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/iconSearch.png"))); // NOI18N
         btnSearch6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -489,7 +485,6 @@ public class mainGuias extends javax.swing.JPanel {
         txtFilterSede6.setOpaque(true);
         pnlMain5.add(txtFilterSede6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 280, 40));
 
-        btnSearch7.setBackground(new java.awt.Color(242, 242, 242));
         btnSearch7.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         btnSearch7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/iconSearch.png"))); // NOI18N
         btnSearch7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));

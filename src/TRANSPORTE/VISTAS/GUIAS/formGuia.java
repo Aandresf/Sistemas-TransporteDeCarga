@@ -147,9 +147,7 @@ public class formGuia extends javax.swing.JFrame {
 
         txtDocumentoPersona3.setEditable(false);
         txtDocumentoPersona3.setBackground(new java.awt.Color(250, 250, 250));
-        txtDocumentoPersona3.setForeground(new java.awt.Color(0, 0, 0));
         txtDocumentoPersona3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(102, 102, 102), 1, true));
-        txtDocumentoPersona3.setCaretColor(new java.awt.Color(0, 0, 0));
         txtDocumentoPersona3.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         txtDocumentoPersona3.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         txtDocumentoPersona3.setEnabled(false);
@@ -157,9 +155,7 @@ public class formGuia extends javax.swing.JFrame {
 
         txtNombrePersona1.setEditable(false);
         txtNombrePersona1.setBackground(new java.awt.Color(250, 250, 250));
-        txtNombrePersona1.setForeground(new java.awt.Color(0, 0, 0));
         txtNombrePersona1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(102, 102, 102), 1, true));
-        txtNombrePersona1.setCaretColor(new java.awt.Color(0, 0, 0));
         txtNombrePersona1.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         txtNombrePersona1.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         txtNombrePersona1.setEnabled(false);
@@ -188,18 +184,14 @@ public class formGuia extends javax.swing.JFrame {
         lblNombre4.setText("OBSERVACIONES");
 
         txtNombrePersona2.setBackground(new java.awt.Color(250, 250, 250));
-        txtNombrePersona2.setForeground(new java.awt.Color(0, 0, 0));
         txtNombrePersona2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(102, 102, 102), 1, true));
-        txtNombrePersona2.setCaretColor(new java.awt.Color(0, 0, 0));
         txtNombrePersona2.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         txtNombrePersona2.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         txtNombrePersona2.setOpaque(true);
 
         txtNombrePersona3.setEditable(false);
         txtNombrePersona3.setBackground(new java.awt.Color(250, 250, 250));
-        txtNombrePersona3.setForeground(new java.awt.Color(0, 0, 0));
         txtNombrePersona3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(102, 102, 102), 1, true));
-        txtNombrePersona3.setCaretColor(new java.awt.Color(0, 0, 0));
         txtNombrePersona3.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         txtNombrePersona3.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         txtNombrePersona3.setEnabled(false);
@@ -210,9 +202,7 @@ public class formGuia extends javax.swing.JFrame {
 
         txtDocumentoPersona4.setEditable(false);
         txtDocumentoPersona4.setBackground(new java.awt.Color(250, 250, 250));
-        txtDocumentoPersona4.setForeground(new java.awt.Color(0, 0, 0));
         txtDocumentoPersona4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(102, 102, 102), 1, true));
-        txtDocumentoPersona4.setCaretColor(new java.awt.Color(0, 0, 0));
         txtDocumentoPersona4.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         txtDocumentoPersona4.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         txtDocumentoPersona4.setEnabled(false);
@@ -220,9 +210,7 @@ public class formGuia extends javax.swing.JFrame {
 
         txtDocumentoPersona5.setEditable(false);
         txtDocumentoPersona5.setBackground(new java.awt.Color(250, 250, 250));
-        txtDocumentoPersona5.setForeground(new java.awt.Color(0, 0, 0));
         txtDocumentoPersona5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(102, 102, 102), 1, true));
-        txtDocumentoPersona5.setCaretColor(new java.awt.Color(0, 0, 0));
         txtDocumentoPersona5.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         txtDocumentoPersona5.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         txtDocumentoPersona5.setEnabled(false);
@@ -230,9 +218,7 @@ public class formGuia extends javax.swing.JFrame {
 
         txtNombrePersona4.setEditable(false);
         txtNombrePersona4.setBackground(new java.awt.Color(250, 250, 250));
-        txtNombrePersona4.setForeground(new java.awt.Color(0, 0, 0));
         txtNombrePersona4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(102, 102, 102), 1, true));
-        txtNombrePersona4.setCaretColor(new java.awt.Color(0, 0, 0));
         txtNombrePersona4.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         txtNombrePersona4.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         txtNombrePersona4.setEnabled(false);
@@ -242,9 +228,7 @@ public class formGuia extends javax.swing.JFrame {
         lblNombre5.setText("<html>DETALLES DE <br>CARGA</html>");
 
         txtNombrePersona5.setBackground(new java.awt.Color(250, 250, 250));
-        txtNombrePersona5.setForeground(new java.awt.Color(0, 0, 0));
         txtNombrePersona5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(102, 102, 102), 1, true));
-        txtNombrePersona5.setCaretColor(new java.awt.Color(0, 0, 0));
         txtNombrePersona5.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         txtNombrePersona5.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         txtNombrePersona5.setOpaque(true);
@@ -253,9 +237,7 @@ public class formGuia extends javax.swing.JFrame {
         lblNombre6.setText("<html>TOTAL DE <br> CARGA</html>");
 
         txtNombrePersona6.setBackground(new java.awt.Color(250, 250, 250));
-        txtNombrePersona6.setForeground(new java.awt.Color(0, 0, 0));
         txtNombrePersona6.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(102, 102, 102), 1, true));
-        txtNombrePersona6.setCaretColor(new java.awt.Color(0, 0, 0));
         txtNombrePersona6.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         txtNombrePersona6.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         txtNombrePersona6.setOpaque(true);
@@ -278,9 +260,7 @@ public class formGuia extends javax.swing.JFrame {
 
         txtDocumentoPersona6.setEditable(false);
         txtDocumentoPersona6.setBackground(new java.awt.Color(250, 250, 250));
-        txtDocumentoPersona6.setForeground(new java.awt.Color(0, 0, 0));
         txtDocumentoPersona6.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(102, 102, 102), 1, true));
-        txtDocumentoPersona6.setCaretColor(new java.awt.Color(0, 0, 0));
         txtDocumentoPersona6.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         txtDocumentoPersona6.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         txtDocumentoPersona6.setEnabled(false);
@@ -291,9 +271,7 @@ public class formGuia extends javax.swing.JFrame {
 
         txtNombrePersona7.setEditable(false);
         txtNombrePersona7.setBackground(new java.awt.Color(250, 250, 250));
-        txtNombrePersona7.setForeground(new java.awt.Color(0, 0, 0));
         txtNombrePersona7.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(102, 102, 102), 1, true));
-        txtNombrePersona7.setCaretColor(new java.awt.Color(0, 0, 0));
         txtNombrePersona7.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         txtNombrePersona7.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         txtNombrePersona7.setEnabled(false);
@@ -367,9 +345,9 @@ public class formGuia extends javax.swing.JFrame {
                     .addGroup(pnlUser1Layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(btnCancelFormPersona, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(30, 30, 30)
-                        .addComponent(btnCleanFormPersona, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnCleanFormPersona, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(156, 156, 156)
                         .addComponent(btnSetFormPersona, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(pnlUser1Layout.createSequentialGroup()
                         .addComponent(btnSetFormPersona5, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -402,24 +380,24 @@ public class formGuia extends javax.swing.JFrame {
                 .addGap(66, 66, 66)
                 .addGroup(pnlUser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(pnlUser1Layout.createSequentialGroup()
-                        .addGroup(pnlUser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE, false)
-                            .addComponent(btnSetFormPersona3, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
+                        .addGroup(pnlUser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(pnlUser1Layout.createSequentialGroup()
                                 .addGap(10, 10, 10)
                                 .addGroup(pnlUser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(lblCedula6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(txtDocumentoPersona3, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                    .addComponent(txtDocumentoPersona3, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(btnSetFormPersona3, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
                         .addGroup(pnlUser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(lblNombre2)
                             .addComponent(txtNombrePersona1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(pnlUser1Layout.createSequentialGroup()
                         .addGap(6, 6, 6)
-                        .addGroup(pnlUser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(btnSetFormPersona2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(pnlUser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(pnlUser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                 .addComponent(lblCedula8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(txtDocumentoPersona4, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(txtDocumentoPersona4, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(btnSetFormPersona2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(21, 21, 21)
                         .addGroup(pnlUser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(lblNombre1)

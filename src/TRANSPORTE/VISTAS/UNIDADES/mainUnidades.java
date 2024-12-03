@@ -27,17 +27,15 @@ public class mainUnidades extends javax.swing.JPanel {
     private void initComponents() {
 
         pnlHeader = new javax.swing.JPanel();
-        btnHeader1 = new javax.swing.JToggleButton();
-        btnHeader2 = new javax.swing.JToggleButton();
-        btnHeader3 = new javax.swing.JToggleButton();
-        btnHeader4 = new javax.swing.JToggleButton();
-        btnHeader5 = new javax.swing.JToggleButton();
+        lblTitlePersona = new javax.swing.JLabel();
         pnlMain = new javax.swing.JPanel();
         pnlMain1 = new javax.swing.JPanel();
         subHeader1 = new javax.swing.JPanel();
         btnHeader6 = new javax.swing.JToggleButton();
         btnHeader7 = new javax.swing.JToggleButton();
         btnHeader8 = new javax.swing.JToggleButton();
+        btnHeader3 = new javax.swing.JToggleButton();
+        btnHeader2 = new javax.swing.JToggleButton();
         subMain1 = new javax.swing.JPanel();
         checkEstado4 = new javax.swing.JCheckBox();
         btnModificarSede3 = new javax.swing.JButton();
@@ -91,46 +89,10 @@ public class mainUnidades extends javax.swing.JPanel {
 
         pnlHeader.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btnHeader1.setBackground(new java.awt.Color(248, 248, 248));
-        btnHeader1.setFont(new java.awt.Font("Roboto", 1, 18)); // NOI18N
-        btnHeader1.setSelected(true);
-        btnHeader1.setText("UNIDADES");
-        btnHeader1.setBorder(null);
-        btnHeader1.setBorderPainted(false);
-        btnHeader1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        pnlHeader.add(btnHeader1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 196, 70));
-
-        btnHeader2.setBackground(new java.awt.Color(248, 248, 248));
-        btnHeader2.setFont(new java.awt.Font("Roboto", 1, 16)); // NOI18N
-        btnHeader2.setText("TIPOS DE UNIDAD");
-        btnHeader2.setBorder(null);
-        btnHeader2.setBorderPainted(false);
-        btnHeader2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        pnlHeader.add(btnHeader2, new org.netbeans.lib.awtextra.AbsoluteConstraints(206, 0, 196, 70));
-
-        btnHeader3.setBackground(new java.awt.Color(248, 248, 248));
-        btnHeader3.setFont(new java.awt.Font("Roboto", 1, 18)); // NOI18N
-        btnHeader3.setText("MANTENIMIENTOS");
-        btnHeader3.setBorder(null);
-        btnHeader3.setBorderPainted(false);
-        btnHeader3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        pnlHeader.add(btnHeader3, new org.netbeans.lib.awtextra.AbsoluteConstraints(402, 0, 196, 70));
-
-        btnHeader4.setBackground(new java.awt.Color(248, 248, 248));
-        btnHeader4.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
-        btnHeader4.setText("<html>ENCARGADOS DE<br> MANTENIMIENTO</html>");
-        btnHeader4.setBorder(null);
-        btnHeader4.setBorderPainted(false);
-        btnHeader4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        pnlHeader.add(btnHeader4, new org.netbeans.lib.awtextra.AbsoluteConstraints(598, 0, 196, 70));
-
-        btnHeader5.setBackground(new java.awt.Color(248, 248, 248));
-        btnHeader5.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
-        btnHeader5.setText("<html>TIPOS DE <br> MANTENIMIENTO </html>");
-        btnHeader5.setBorder(null);
-        btnHeader5.setBorderPainted(false);
-        btnHeader5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        pnlHeader.add(btnHeader5, new org.netbeans.lib.awtextra.AbsoluteConstraints(794, 0, 196, 70));
+        lblTitlePersona.setFont(new java.awt.Font("Roboto Black", 3, 24)); // NOI18N
+        lblTitlePersona.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblTitlePersona.setText("UNIDADES");
+        pnlHeader.add(lblTitlePersona, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 20, 470, -1));
 
         add(pnlHeader, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 70));
 
@@ -146,6 +108,7 @@ public class mainUnidades extends javax.swing.JPanel {
 
         btnHeader6.setBackground(new java.awt.Color(239, 255, 255));
         btnHeader6.setFont(new java.awt.Font("Roboto", 1, 18)); // NOI18N
+        btnHeader6.setSelected(true);
         btnHeader6.setText("LOCALIZADORES");
         btnHeader6.setBorder(null);
         btnHeader6.setBorderPainted(false);
@@ -154,6 +117,7 @@ public class mainUnidades extends javax.swing.JPanel {
 
         btnHeader7.setBackground(new java.awt.Color(239, 255, 255));
         btnHeader7.setFont(new java.awt.Font("Roboto", 1, 18)); // NOI18N
+        btnHeader7.setSelected(true);
         btnHeader7.setText("PROPIETARIOS");
         btnHeader7.setBorder(null);
         btnHeader7.setBorderPainted(false);
@@ -162,11 +126,30 @@ public class mainUnidades extends javax.swing.JPanel {
 
         btnHeader8.setBackground(new java.awt.Color(239, 255, 255));
         btnHeader8.setFont(new java.awt.Font("Roboto", 1, 18)); // NOI18N
+        btnHeader8.setSelected(true);
         btnHeader8.setText("CARGA");
         btnHeader8.setBorder(null);
         btnHeader8.setBorderPainted(false);
         btnHeader8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         subHeader1.add(btnHeader8, new org.netbeans.lib.awtextra.AbsoluteConstraints(402, 0, 196, 55));
+
+        btnHeader3.setBackground(new java.awt.Color(239, 255, 255));
+        btnHeader3.setFont(new java.awt.Font("Roboto", 1, 18)); // NOI18N
+        btnHeader3.setSelected(true);
+        btnHeader3.setText("MANTENIMIENTOS");
+        btnHeader3.setBorder(null);
+        btnHeader3.setBorderPainted(false);
+        btnHeader3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        subHeader1.add(btnHeader3, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 0, 196, 50));
+
+        btnHeader2.setBackground(new java.awt.Color(239, 255, 255));
+        btnHeader2.setFont(new java.awt.Font("Roboto", 1, 16)); // NOI18N
+        btnHeader2.setSelected(true);
+        btnHeader2.setText("TIPOS DE UNIDAD");
+        btnHeader2.setBorder(null);
+        btnHeader2.setBorderPainted(false);
+        btnHeader2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        subHeader1.add(btnHeader2, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 0, 190, 50));
 
         pnlMain1.add(subHeader1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 15, 1000, 50));
 
@@ -201,12 +184,12 @@ public class mainUnidades extends javax.swing.JPanel {
         btnFormModifyTransportista1.setBackground(new java.awt.Color(153, 255, 153));
         btnFormModifyTransportista1.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         btnFormModifyTransportista1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/iconAdd.png"))); // NOI18N
-        btnFormModifyTransportista1.setText("<html>REGISTAR<br>TRANSPORTISTA</html>");
+        btnFormModifyTransportista1.setText("<html>REGISTAR<br>UNIDAD</html>");
         btnFormModifyTransportista1.setToolTipText("");
         btnFormModifyTransportista1.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
         btnFormModifyTransportista1.setIconTextGap(10);
         btnFormModifyTransportista1.setMargin(new java.awt.Insets(2, 1, 3, 14));
-        subMain1.add(btnFormModifyTransportista1, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 20, 160, 60));
+        subMain1.add(btnFormModifyTransportista1, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 20, 120, 60));
 
         txtFilterSede3.setBackground(new java.awt.Color(242, 242, 242));
         txtFilterSede3.setBorder(null);
@@ -214,7 +197,6 @@ public class mainUnidades extends javax.swing.JPanel {
         txtFilterSede3.setOpaque(true);
         subMain1.add(txtFilterSede3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 280, 40));
 
-        btnSearch4.setBackground(new java.awt.Color(242, 242, 242));
         btnSearch4.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         btnSearch4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/iconSearch.png"))); // NOI18N
         btnSearch4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -238,7 +220,7 @@ public class mainUnidades extends javax.swing.JPanel {
 
         subMain1.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, 980, 410));
 
-        pnlMain1.add(subMain1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, -1, 585));
+        pnlMain1.add(subMain1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 100, -1, 585));
 
         pnlMain.add(pnlMain1, "card2");
 
@@ -286,7 +268,6 @@ public class mainUnidades extends javax.swing.JPanel {
         txtFilterSede7.setOpaque(true);
         pnlMain2.add(txtFilterSede7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 280, 40));
 
-        btnSearch8.setBackground(new java.awt.Color(242, 242, 242));
         btnSearch8.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         btnSearch8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/iconSearch.png"))); // NOI18N
         btnSearch8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -356,7 +337,6 @@ public class mainUnidades extends javax.swing.JPanel {
         txtFilterSede4.setOpaque(true);
         pnlMain3.add(txtFilterSede4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 280, 40));
 
-        btnSearch5.setBackground(new java.awt.Color(242, 242, 242));
         btnSearch5.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         btnSearch5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/iconSearch.png"))); // NOI18N
         btnSearch5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -426,7 +406,6 @@ public class mainUnidades extends javax.swing.JPanel {
         txtFilterSede5.setOpaque(true);
         pnlMain4.add(txtFilterSede5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 280, 40));
 
-        btnSearch6.setBackground(new java.awt.Color(242, 242, 242));
         btnSearch6.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         btnSearch6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/iconSearch.png"))); // NOI18N
         btnSearch6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -496,7 +475,6 @@ public class mainUnidades extends javax.swing.JPanel {
         txtFilterSede6.setOpaque(true);
         pnlMain5.add(txtFilterSede6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 280, 40));
 
-        btnSearch7.setBackground(new java.awt.Color(242, 242, 242));
         btnSearch7.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         btnSearch7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/iconSearch.png"))); // NOI18N
         btnSearch7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -537,11 +515,8 @@ public class mainUnidades extends javax.swing.JPanel {
     public javax.swing.JButton btnFormModifyTransportista3;
     public javax.swing.JButton btnFormModifyTransportista4;
     public javax.swing.JButton btnFormModifyTransportista5;
-    public javax.swing.JToggleButton btnHeader1;
     public javax.swing.JToggleButton btnHeader2;
     public javax.swing.JToggleButton btnHeader3;
-    public javax.swing.JToggleButton btnHeader4;
-    public javax.swing.JToggleButton btnHeader5;
     public javax.swing.JToggleButton btnHeader6;
     public javax.swing.JToggleButton btnHeader7;
     public javax.swing.JToggleButton btnHeader8;
@@ -565,6 +540,7 @@ public class mainUnidades extends javax.swing.JPanel {
     private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JScrollPane jScrollPane7;
     private javax.swing.JScrollPane jScrollPane8;
+    public javax.swing.JLabel lblTitlePersona;
     private javax.swing.JPanel pnlHeader;
     private javax.swing.JPanel pnlMain;
     public javax.swing.JPanel pnlMain1;

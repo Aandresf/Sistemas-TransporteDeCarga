@@ -32,20 +32,21 @@ public class formPropietarios extends javax.swing.JFrame {
         lblTitlePersona = new javax.swing.JLabel();
         lblEstatusPersona = new javax.swing.JLabel();
         lblNombre1 = new javax.swing.JLabel();
-        txtNombrePersona = new javax.swing.JTextField();
+        txtNombrePropietario = new javax.swing.JTextField();
         lblCedula3 = new javax.swing.JLabel();
-        txtDocumentoPersona = new javax.swing.JTextField();
+        txtDocumentoPropietario = new javax.swing.JTextField();
         txtTelefonoPersona = new javax.swing.JTextField();
         lblCategoria1 = new javax.swing.JLabel();
-        lblInfoPersona = new javax.swing.JLabel();
-        lblControlFormPersona = new javax.swing.JLabel();
-        lblCategoria6 = new javax.swing.JLabel();
-        txtCorreoPersona = new javax.swing.JTextField();
-        lblCategoria7 = new javax.swing.JLabel();
+        lblInfoRegistrarPropietario = new javax.swing.JLabel();
+        lblDescripccionPropietario = new javax.swing.JLabel();
+        txtDescripccionPropietario = new javax.swing.JTextField();
+        lblTipoDocumento = new javax.swing.JLabel();
         jcbxTipoPersona = new javax.swing.JComboBox<>();
         btnCancelFormPersona = new javax.swing.JButton();
         btnCleanFormPersona = new javax.swing.JButton();
         btnSetFormPersona = new javax.swing.JButton();
+        btnBuscarPropietario = new javax.swing.JButton();
+        btnEliminarFormPropietario = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -63,29 +64,23 @@ public class formPropietarios extends javax.swing.JFrame {
         lblNombre1.setFont(new java.awt.Font("Roboto Black", 0, 18)); // NOI18N
         lblNombre1.setText("NOMBRE");
 
-        txtNombrePersona.setBackground(new java.awt.Color(250, 250, 250));
-        txtNombrePersona.setForeground(new java.awt.Color(0, 0, 0));
-        txtNombrePersona.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(102, 102, 102), 1, true));
-        txtNombrePersona.setCaretColor(new java.awt.Color(0, 0, 0));
-        txtNombrePersona.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
-        txtNombrePersona.setDisabledTextColor(new java.awt.Color(0, 0, 0));
-        txtNombrePersona.setOpaque(true);
+        txtNombrePropietario.setBackground(new java.awt.Color(250, 250, 250));
+        txtNombrePropietario.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(102, 102, 102), 1, true));
+        txtNombrePropietario.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        txtNombrePropietario.setDisabledTextColor(new java.awt.Color(0, 0, 0));
+        txtNombrePropietario.setOpaque(true);
 
         lblCedula3.setFont(new java.awt.Font("Roboto Black", 0, 18)); // NOI18N
         lblCedula3.setText("DOCUMENTO");
 
-        txtDocumentoPersona.setBackground(new java.awt.Color(250, 250, 250));
-        txtDocumentoPersona.setForeground(new java.awt.Color(0, 0, 0));
-        txtDocumentoPersona.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(102, 102, 102), 1, true));
-        txtDocumentoPersona.setCaretColor(new java.awt.Color(0, 0, 0));
-        txtDocumentoPersona.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
-        txtDocumentoPersona.setDisabledTextColor(new java.awt.Color(0, 0, 0));
-        txtDocumentoPersona.setOpaque(true);
+        txtDocumentoPropietario.setBackground(new java.awt.Color(250, 250, 250));
+        txtDocumentoPropietario.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(102, 102, 102), 1, true));
+        txtDocumentoPropietario.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        txtDocumentoPropietario.setDisabledTextColor(new java.awt.Color(0, 0, 0));
+        txtDocumentoPropietario.setOpaque(true);
 
         txtTelefonoPersona.setBackground(new java.awt.Color(250, 250, 250));
-        txtTelefonoPersona.setForeground(new java.awt.Color(0, 0, 0));
         txtTelefonoPersona.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(102, 102, 102), 1, true));
-        txtTelefonoPersona.setCaretColor(new java.awt.Color(0, 0, 0));
         txtTelefonoPersona.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         txtTelefonoPersona.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         txtTelefonoPersona.setOpaque(true);
@@ -93,24 +88,20 @@ public class formPropietarios extends javax.swing.JFrame {
         lblCategoria1.setFont(new java.awt.Font("Roboto Black", 0, 18)); // NOI18N
         lblCategoria1.setText("TELEFONO");
 
-        lblInfoPersona.setForeground(new java.awt.Color(255, 0, 51));
-        lblInfoPersona.setText("* ");
+        lblInfoRegistrarPropietario.setForeground(new java.awt.Color(255, 0, 51));
+        lblInfoRegistrarPropietario.setText("* ");
 
-        lblControlFormPersona.setText("1");
+        lblDescripccionPropietario.setFont(new java.awt.Font("Roboto Black", 0, 18)); // NOI18N
+        lblDescripccionPropietario.setText("DESCRIPCCION");
 
-        lblCategoria6.setFont(new java.awt.Font("Roboto Black", 0, 18)); // NOI18N
-        lblCategoria6.setText("CORREO");
+        txtDescripccionPropietario.setBackground(new java.awt.Color(250, 250, 250));
+        txtDescripccionPropietario.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(102, 102, 102), 1, true));
+        txtDescripccionPropietario.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        txtDescripccionPropietario.setDisabledTextColor(new java.awt.Color(0, 0, 0));
+        txtDescripccionPropietario.setOpaque(true);
 
-        txtCorreoPersona.setBackground(new java.awt.Color(250, 250, 250));
-        txtCorreoPersona.setForeground(new java.awt.Color(0, 0, 0));
-        txtCorreoPersona.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(102, 102, 102), 1, true));
-        txtCorreoPersona.setCaretColor(new java.awt.Color(0, 0, 0));
-        txtCorreoPersona.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
-        txtCorreoPersona.setDisabledTextColor(new java.awt.Color(0, 0, 0));
-        txtCorreoPersona.setOpaque(true);
-
-        lblCategoria7.setFont(new java.awt.Font("Roboto Black", 0, 18)); // NOI18N
-        lblCategoria7.setText("TIPO");
+        lblTipoDocumento.setFont(new java.awt.Font("Roboto Black", 0, 18)); // NOI18N
+        lblTipoDocumento.setText("TIPO");
 
         jcbxTipoPersona.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "V", "E", "J", "G" }));
         jcbxTipoPersona.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
@@ -143,134 +134,154 @@ public class formPropietarios extends javax.swing.JFrame {
         btnSetFormPersona.setIconTextGap(10);
         btnSetFormPersona.setMargin(new java.awt.Insets(0, 0, 0, 0));
 
+        btnBuscarPropietario.setBackground(new java.awt.Color(231, 255, 255));
+        btnBuscarPropietario.setFont(new java.awt.Font("Roboto", 1, 12)); // NOI18N
+        btnBuscarPropietario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/iconSearch.png"))); // NOI18N
+        btnBuscarPropietario.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        btnBuscarPropietario.setIconTextGap(10);
+        btnBuscarPropietario.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        btnBuscarPropietario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBuscarPropietarioActionPerformed(evt);
+            }
+        });
+
+        btnEliminarFormPropietario.setBackground(new java.awt.Color(102, 0, 0));
+        btnEliminarFormPropietario.setFont(new java.awt.Font("Roboto", 1, 12)); // NOI18N
+        btnEliminarFormPropietario.setForeground(new java.awt.Color(255, 255, 255));
+        btnEliminarFormPropietario.setText("ELIMINAR");
+        btnEliminarFormPropietario.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        btnEliminarFormPropietario.setIconTextGap(10);
+        btnEliminarFormPropietario.setMargin(new java.awt.Insets(2, 1, 3, 14));
+
         javax.swing.GroupLayout pnlUser1Layout = new javax.swing.GroupLayout(pnlUser1);
         pnlUser1.setLayout(pnlUser1Layout);
         pnlUser1Layout.setHorizontalGroup(
             pnlUser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlUser1Layout.createSequentialGroup()
-                .addGroup(pnlUser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, pnlUser1Layout.createSequentialGroup()
+            .addGroup(pnlUser1Layout.createSequentialGroup()
+                .addGroup(pnlUser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(pnlUser1Layout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(pnlUser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblTitlePersona, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(lblTipoDocumento)
                             .addGroup(pnlUser1Layout.createSequentialGroup()
-                                .addComponent(lblEstatusPersona, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(lblInfoPersona, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                                .addGroup(pnlUser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, pnlUser1Layout.createSequentialGroup()
+                                        .addGap(31, 31, 31)
+                                        .addComponent(btnCancelFormPersona, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(57, 57, 57)
+                                        .addComponent(btnCleanFormPersona, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(pnlUser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addGroup(pnlUser1Layout.createSequentialGroup()
+                                            .addGroup(pnlUser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                                .addComponent(jcbxTipoPersona, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGroup(pnlUser1Layout.createSequentialGroup()
+                                                    .addComponent(lblCategoria1)
+                                                    .addGap(20, 20, 20)
+                                                    .addComponent(txtTelefonoPersona, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                            .addGap(18, 18, 18)
+                                            .addComponent(lblDescripccionPropietario, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, pnlUser1Layout.createSequentialGroup()
+                                            .addComponent(lblCedula3, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(btnBuscarPropietario)
+                                            .addGap(2, 2, 2)
+                                            .addComponent(txtDocumentoPropietario, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGap(18, 18, 18)
+                                            .addComponent(lblNombre1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGroup(pnlUser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addGroup(pnlUser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addComponent(txtNombrePropietario, javax.swing.GroupLayout.DEFAULT_SIZE, 303, Short.MAX_VALUE)
+                                        .addComponent(txtDescripccionPropietario))
+                                    .addGroup(pnlUser1Layout.createSequentialGroup()
+                                        .addComponent(btnEliminarFormPropietario, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(50, 50, 50)
+                                        .addComponent(btnSetFormPersona, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(32, 32, 32))))))
                     .addGroup(pnlUser1Layout.createSequentialGroup()
-                        .addGroup(pnlUser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(pnlUser1Layout.createSequentialGroup()
-                                .addComponent(lblCedula3, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(txtDocumentoPersona, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(lblNombre1, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(pnlUser1Layout.createSequentialGroup()
-                                .addGroup(pnlUser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(lblCategoria1)
-                                    .addComponent(lblCategoria7))
-                                .addGap(30, 30, 30)
-                                .addGroup(pnlUser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(txtTelefonoPersona)
-                                    .addComponent(jcbxTipoPersona, 0, 184, Short.MAX_VALUE))
-                                .addGap(18, 18, 18)
-                                .addComponent(lblCategoria6)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(lblEstatusPersona, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(pnlUser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(txtNombrePersona, javax.swing.GroupLayout.DEFAULT_SIZE, 303, Short.MAX_VALUE)
-                            .addComponent(txtCorreoPersona))))
-                .addGap(33, 33, 33))
-            .addGroup(pnlUser1Layout.createSequentialGroup()
-                .addGroup(pnlUser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(pnlUser1Layout.createSequentialGroup()
-                        .addGap(345, 345, 345)
-                        .addComponent(lblControlFormPersona, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(pnlUser1Layout.createSequentialGroup()
-                        .addComponent(btnCancelFormPersona, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(30, 30, 30)
-                        .addComponent(btnCleanFormPersona, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(190, 190, 190)
-                        .addComponent(btnSetFormPersona, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(lblTitlePersona, javax.swing.GroupLayout.DEFAULT_SIZE, 705, Short.MAX_VALUE)
+                            .addComponent(lblInfoRegistrarPropietario, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         pnlUser1Layout.setVerticalGroup(
             pnlUser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlUser1Layout.createSequentialGroup()
-                .addComponent(lblControlFormPersona)
-                .addGap(9, 9, 9)
                 .addComponent(lblTitlePersona, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(pnlUser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(pnlUser1Layout.createSequentialGroup()
-                        .addComponent(lblEstatusPersona, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(19, 19, 19))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlUser1Layout.createSequentialGroup()
-                        .addComponent(lblInfoPersona, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)))
                 .addGroup(pnlUser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblCedula3)
-                    .addComponent(txtDocumentoPersona, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblNombre1)
-                    .addComponent(txtNombrePersona, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                    .addComponent(lblInfoRegistrarPropietario, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblEstatusPersona, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(28, 28, 28)
                 .addGroup(pnlUser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(pnlUser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(txtCorreoPersona, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(lblCategoria6))
-                    .addGroup(pnlUser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(txtTelefonoPersona, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(lblCategoria1)))
+                        .addComponent(lblCedula3)
+                        .addComponent(txtDocumentoPropietario, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(lblNombre1)
+                        .addComponent(txtNombrePropietario, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btnBuscarPropietario, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(pnlUser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtTelefonoPersona, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblCategoria1)
+                    .addComponent(lblDescripccionPropietario)
+                    .addComponent(txtDescripccionPropietario, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addGroup(pnlUser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblCategoria7)
+                .addGroup(pnlUser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblTipoDocumento)
                     .addComponent(jcbxTipoPersona, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
-                .addGroup(pnlUser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnCancelFormPersona, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 52, Short.MAX_VALUE)
+                .addGroup(pnlUser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnCleanFormPersona, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnSetFormPersona, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap())
+                    .addComponent(btnCancelFormPersona, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnSetFormPersona, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnEliminarFormPropietario, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(88, 88, 88))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(0, 5, Short.MAX_VALUE)
-                .addComponent(pnlUser1, javax.swing.GroupLayout.PREFERRED_SIZE, 780, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 5, Short.MAX_VALUE))
+            .addComponent(pnlUser1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(0, 5, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addComponent(pnlUser1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 5, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void btnBuscarPropietarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarPropietarioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnBuscarPropietarioActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public javax.swing.JButton btnBuscarPropietario;
     public javax.swing.JButton btnCancelFormPersona;
     public javax.swing.JButton btnCleanFormPersona;
+    public javax.swing.JButton btnEliminarFormPropietario;
     public javax.swing.JButton btnSetFormPersona;
     public javax.swing.JComboBox<String> jcbxTipoPersona;
     public javax.swing.JLabel lblCategoria1;
-    public javax.swing.JLabel lblCategoria6;
-    public javax.swing.JLabel lblCategoria7;
     public javax.swing.JLabel lblCedula3;
-    public javax.swing.JLabel lblControlFormPersona;
+    public javax.swing.JLabel lblDescripccionPropietario;
     public javax.swing.JLabel lblEstatusPersona;
-    public javax.swing.JLabel lblInfoPersona;
+    public javax.swing.JLabel lblInfoRegistrarPropietario;
     public javax.swing.JLabel lblNombre1;
+    public javax.swing.JLabel lblTipoDocumento;
     public javax.swing.JLabel lblTitlePersona;
     public javax.swing.JPanel pnlUser1;
-    public javax.swing.JTextField txtCorreoPersona;
-    public javax.swing.JTextField txtDocumentoPersona;
-    public javax.swing.JTextField txtNombrePersona;
+    public javax.swing.JTextField txtDescripccionPropietario;
+    public javax.swing.JTextField txtDocumentoPropietario;
+    public javax.swing.JTextField txtNombrePropietario;
     public javax.swing.JTextField txtTelefonoPersona;
     // End of variables declaration//GEN-END:variables
 }

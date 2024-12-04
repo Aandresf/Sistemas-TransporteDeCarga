@@ -37,7 +37,7 @@
               <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
               <Component id="lblTitleMantemimiento" min="-2" pref="62" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="subMain1" pref="501" max="32767" attributes="0"/>
+              <Component id="subMain1" pref="591" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -72,9 +72,9 @@
         <Property name="useNullLayout" type="boolean" value="false"/>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JCheckBox" name="checkEstado4">
+        <Component class="javax.swing.JCheckBox" name="checkEstadoMantenimiento">
           <Properties>
-            <Property name="text" type="java.lang.String" value="NO DISPONIBLE"/>
+            <Property name="text" type="java.lang.String" value="NO FINALIZADOS"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
@@ -85,7 +85,7 @@
             </Constraint>
           </Constraints>
         </Component>
-        <Component class="javax.swing.JButton" name="btnModificarSede3">
+        <Component class="javax.swing.JButton" name="btnModificarMantenimiento">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Roboto" size="12" style="1"/>
@@ -115,11 +115,11 @@
           </AuxValues>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="20" y="530" width="160" height="40"/>
+              <AbsoluteConstraints x="20" y="540" width="160" height="40"/>
             </Constraint>
           </Constraints>
         </Component>
-        <Component class="javax.swing.JButton" name="btnDeleteFromTable1">
+        <Component class="javax.swing.JButton" name="btnDeleteFromMantenimiento">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="0" green="0" red="66" type="rgb"/>

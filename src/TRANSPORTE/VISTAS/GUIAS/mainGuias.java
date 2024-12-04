@@ -37,11 +37,14 @@ public class mainGuias extends javax.swing.JPanel {
         btnHeader2 = new javax.swing.JToggleButton();
         btnHeader3 = new javax.swing.JToggleButton();
         btnHeader4 = new javax.swing.JToggleButton();
+        btnHeader10 = new javax.swing.JToggleButton();
         pnlMain = new javax.swing.JPanel();
         pnlMain1 = new javax.swing.JPanel();
         subHeader1 = new javax.swing.JPanel();
         btnHeader6 = new javax.swing.JToggleButton();
         btnHeader7 = new javax.swing.JToggleButton();
+        btnHeader9 = new javax.swing.JToggleButton();
+        btnHeader8 = new javax.swing.JToggleButton();
         subMain1 = new javax.swing.JPanel();
         checkEstado4 = new javax.swing.JCheckBox();
         btnModificarSede3 = new javax.swing.JButton();
@@ -51,6 +54,7 @@ public class mainGuias extends javax.swing.JPanel {
         btnSearch4 = new javax.swing.JLabel();
         jScrollPane4 = new javax.swing.JScrollPane();
         tblSedes2 = new javax.swing.JTable();
+        btnHeader5 = new javax.swing.JToggleButton();
         pnlMain2 = new javax.swing.JPanel();
         checkEstado8 = new javax.swing.JCheckBox();
         btnModificarSede7 = new javax.swing.JButton();
@@ -106,11 +110,11 @@ public class mainGuias extends javax.swing.JPanel {
 
         btnHeader2.setBackground(new java.awt.Color(248, 248, 248));
         btnHeader2.setFont(new java.awt.Font("Roboto", 1, 18)); // NOI18N
-        btnHeader2.setText("FACTURAS");
+        btnHeader2.setText("RECIBO DE ENTREGA");
         btnHeader2.setBorder(null);
         btnHeader2.setBorderPainted(false);
         btnHeader2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        pnlHeader.add(btnHeader2, new org.netbeans.lib.awtextra.AbsoluteConstraints(206, 0, 196, 70));
+        pnlHeader.add(btnHeader2, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 0, 210, 70));
 
         btnHeader3.setBackground(new java.awt.Color(248, 248, 248));
         btnHeader3.setFont(new java.awt.Font("Roboto", 1, 18)); // NOI18N
@@ -118,7 +122,7 @@ public class mainGuias extends javax.swing.JPanel {
         btnHeader3.setBorder(null);
         btnHeader3.setBorderPainted(false);
         btnHeader3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        pnlHeader.add(btnHeader3, new org.netbeans.lib.awtextra.AbsoluteConstraints(402, 0, 196, 70));
+        pnlHeader.add(btnHeader3, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 0, 160, 70));
 
         btnHeader4.setBackground(new java.awt.Color(248, 248, 248));
         btnHeader4.setFont(new java.awt.Font("Roboto", 1, 18)); // NOI18N
@@ -126,7 +130,15 @@ public class mainGuias extends javax.swing.JPanel {
         btnHeader4.setBorder(null);
         btnHeader4.setBorderPainted(false);
         btnHeader4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        pnlHeader.add(btnHeader4, new org.netbeans.lib.awtextra.AbsoluteConstraints(598, 0, 240, 70));
+        pnlHeader.add(btnHeader4, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 0, 240, 70));
+
+        btnHeader10.setBackground(new java.awt.Color(248, 248, 248));
+        btnHeader10.setFont(new java.awt.Font("Roboto", 1, 18)); // NOI18N
+        btnHeader10.setText("FACTURAS");
+        btnHeader10.setBorder(null);
+        btnHeader10.setBorderPainted(false);
+        btnHeader10.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        pnlHeader.add(btnHeader10, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 0, 170, 70));
 
         add(pnlHeader, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 70));
 
@@ -160,6 +172,22 @@ public class mainGuias extends javax.swing.JPanel {
         btnHeader7.setBorderPainted(false);
         btnHeader7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         subHeader1.add(btnHeader7, new org.netbeans.lib.awtextra.AbsoluteConstraints(206, 0, 196, 55));
+
+        btnHeader9.setBackground(new java.awt.Color(248, 248, 248));
+        btnHeader9.setFont(new java.awt.Font("Roboto", 1, 18)); // NOI18N
+        btnHeader9.setText("FACTURAS");
+        btnHeader9.setBorder(null);
+        btnHeader9.setBorderPainted(false);
+        btnHeader9.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        subHeader1.add(btnHeader9, new org.netbeans.lib.awtextra.AbsoluteConstraints(206, 0, 170, 70));
+
+        btnHeader8.setBackground(new java.awt.Color(248, 248, 248));
+        btnHeader8.setFont(new java.awt.Font("Roboto", 1, 18)); // NOI18N
+        btnHeader8.setText("FACTURAS");
+        btnHeader8.setBorder(null);
+        btnHeader8.setBorderPainted(false);
+        btnHeader8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        subHeader1.add(btnHeader8, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, -40, 170, 70));
 
         pnlMain1.add(subHeader1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 15, 1000, 50));
 
@@ -229,6 +257,14 @@ public class mainGuias extends javax.swing.JPanel {
         jScrollPane4.setViewportView(tblSedes2);
 
         subMain1.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, 980, 410));
+
+        btnHeader5.setBackground(new java.awt.Color(248, 248, 248));
+        btnHeader5.setFont(new java.awt.Font("Roboto", 1, 18)); // NOI18N
+        btnHeader5.setText("FACTURAS");
+        btnHeader5.setBorder(null);
+        btnHeader5.setBorderPainted(false);
+        btnHeader5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        subMain1.add(btnHeader5, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 280, 170, 70));
 
         pnlMain1.add(subMain1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, -1, 585));
 
@@ -530,11 +566,15 @@ public class mainGuias extends javax.swing.JPanel {
     public javax.swing.JButton btnFormModifyTransportista4;
     public javax.swing.JButton btnFormModifyTransportista5;
     public javax.swing.JToggleButton btnHeader1;
+    public javax.swing.JToggleButton btnHeader10;
     public javax.swing.JToggleButton btnHeader2;
     public javax.swing.JToggleButton btnHeader3;
     public javax.swing.JToggleButton btnHeader4;
+    public javax.swing.JToggleButton btnHeader5;
     public javax.swing.JToggleButton btnHeader6;
     public javax.swing.JToggleButton btnHeader7;
+    public javax.swing.JToggleButton btnHeader8;
+    public javax.swing.JToggleButton btnHeader9;
     public javax.swing.JButton btnLoadForm;
     public javax.swing.JButton btnModificarSede3;
     public javax.swing.JButton btnModificarSede4;

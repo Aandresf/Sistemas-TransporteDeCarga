@@ -28,9 +28,9 @@ public class formMantenimiento extends javax.swing.JFrame {
 
         lblTitleMantemimiento = new javax.swing.JLabel();
         subMain1 = new javax.swing.JPanel();
-        checkEstado4 = new javax.swing.JCheckBox();
-        btnModificarSede3 = new javax.swing.JButton();
-        btnDeleteFromTable1 = new javax.swing.JButton();
+        checkEstadoMantenimiento = new javax.swing.JCheckBox();
+        btnModificarMantenimiento = new javax.swing.JButton();
+        btnDeleteFromMantenimiento = new javax.swing.JButton();
         btnFormRegistraMantenimiento = new javax.swing.JButton();
         txtFilterUnidad = new javax.swing.JTextField();
         btnSearchUnidadMant = new javax.swing.JLabel();
@@ -49,29 +49,29 @@ public class formMantenimiento extends javax.swing.JFrame {
         subMain1.setMinimumSize(new java.awt.Dimension(684, 685));
         subMain1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        checkEstado4.setText("NO DISPONIBLE");
-        subMain1.add(checkEstado4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, -1, -1));
+        checkEstadoMantenimiento.setText("NO FINALIZADOS");
+        subMain1.add(checkEstadoMantenimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, -1, -1));
 
-        btnModificarSede3.setFont(new java.awt.Font("Roboto", 1, 12)); // NOI18N
-        btnModificarSede3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/iconTableEdit.png"))); // NOI18N
-        btnModificarSede3.setText("MODIFICAR");
-        btnModificarSede3.setToolTipText("");
-        btnModificarSede3.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
-        btnModificarSede3.setIconTextGap(10);
-        btnModificarSede3.setMargin(new java.awt.Insets(2, 1, 3, 14));
-        btnModificarSede3.setMaximumSize(new java.awt.Dimension(125, 35));
-        btnModificarSede3.setMinimumSize(new java.awt.Dimension(125, 35));
-        btnModificarSede3.setPreferredSize(new java.awt.Dimension(125, 35));
-        subMain1.add(btnModificarSede3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 530, 160, 40));
+        btnModificarMantenimiento.setFont(new java.awt.Font("Roboto", 1, 12)); // NOI18N
+        btnModificarMantenimiento.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/iconTableEdit.png"))); // NOI18N
+        btnModificarMantenimiento.setText("MODIFICAR");
+        btnModificarMantenimiento.setToolTipText("");
+        btnModificarMantenimiento.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        btnModificarMantenimiento.setIconTextGap(10);
+        btnModificarMantenimiento.setMargin(new java.awt.Insets(2, 1, 3, 14));
+        btnModificarMantenimiento.setMaximumSize(new java.awt.Dimension(125, 35));
+        btnModificarMantenimiento.setMinimumSize(new java.awt.Dimension(125, 35));
+        btnModificarMantenimiento.setPreferredSize(new java.awt.Dimension(125, 35));
+        subMain1.add(btnModificarMantenimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 540, 160, 40));
 
-        btnDeleteFromTable1.setBackground(new java.awt.Color(102, 0, 0));
-        btnDeleteFromTable1.setFont(new java.awt.Font("Roboto", 1, 12)); // NOI18N
-        btnDeleteFromTable1.setForeground(new java.awt.Color(255, 255, 255));
-        btnDeleteFromTable1.setText("ELIMINAR");
-        btnDeleteFromTable1.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
-        btnDeleteFromTable1.setIconTextGap(10);
-        btnDeleteFromTable1.setMargin(new java.awt.Insets(2, 1, 3, 14));
-        subMain1.add(btnDeleteFromTable1, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 530, 160, 40));
+        btnDeleteFromMantenimiento.setBackground(new java.awt.Color(102, 0, 0));
+        btnDeleteFromMantenimiento.setFont(new java.awt.Font("Roboto", 1, 12)); // NOI18N
+        btnDeleteFromMantenimiento.setForeground(new java.awt.Color(255, 255, 255));
+        btnDeleteFromMantenimiento.setText("ELIMINAR");
+        btnDeleteFromMantenimiento.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        btnDeleteFromMantenimiento.setIconTextGap(10);
+        btnDeleteFromMantenimiento.setMargin(new java.awt.Insets(2, 1, 3, 14));
+        subMain1.add(btnDeleteFromMantenimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 530, 160, 40));
 
         btnFormRegistraMantenimiento.setBackground(new java.awt.Color(153, 255, 153));
         btnFormRegistraMantenimiento.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
@@ -144,7 +144,7 @@ public class formMantenimiento extends javax.swing.JFrame {
                 .addGap(16, 16, 16)
                 .addComponent(lblTitleMantemimiento, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(subMain1, javax.swing.GroupLayout.PREFERRED_SIZE, 501, Short.MAX_VALUE))
+                .addComponent(subMain1, javax.swing.GroupLayout.PREFERRED_SIZE, 591, Short.MAX_VALUE))
         );
 
         pack();
@@ -186,13 +186,13 @@ public class formMantenimiento extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public javax.swing.JButton btnDeleteFromTable1;
+    public javax.swing.JButton btnDeleteFromMantenimiento;
     public javax.swing.JButton btnFormRegistraMantenimiento;
     public javax.swing.JToggleButton btnMecanicos;
-    public javax.swing.JButton btnModificarSede3;
+    public javax.swing.JButton btnModificarMantenimiento;
     private javax.swing.JLabel btnSearchUnidadMant;
     public javax.swing.JToggleButton btnTiposMante;
-    public javax.swing.JCheckBox checkEstado4;
+    public javax.swing.JCheckBox checkEstadoMantenimiento;
     private javax.swing.JScrollPane jScrollPane4;
     public javax.swing.JLabel lblTitleMantemimiento;
     public javax.swing.JPanel subMain1;

@@ -28,9 +28,9 @@
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="1" attributes="0">
-              <Component id="pnlUser1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="pnlUser1" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -54,53 +54,52 @@
                       <Group type="102" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="lblTipoDocumento" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Group type="103" groupAlignment="1" attributes="0">
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
-                                          <Component id="btnCancelFormPersona" min="-2" pref="129" max="-2" attributes="0"/>
-                                          <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
-                                          <Component id="btnCleanFormPersona" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="103" groupAlignment="1" attributes="0">
-                                          <Group type="102" alignment="1" attributes="0">
-                                              <Group type="103" groupAlignment="1" attributes="0">
-                                                  <Component id="jcbxTipoPersona" min="-2" pref="184" max="-2" attributes="0"/>
-                                                  <Group type="102" attributes="0">
-                                                      <Component id="lblCategoria1" min="-2" max="-2" attributes="0"/>
-                                                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                                                      <Component id="txtTelefonoPersona" min="-2" pref="184" max="-2" attributes="0"/>
-                                                  </Group>
-                                              </Group>
-                                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                                              <Component id="lblDescripccionPropietario" min="-2" pref="100" max="-2" attributes="0"/>
-                                          </Group>
-                                          <Group type="102" alignment="0" attributes="0">
-                                              <Component id="lblCedula3" min="-2" pref="112" max="-2" attributes="0"/>
-                                              <EmptySpace max="-2" attributes="0"/>
-                                              <Component id="btnBuscarPropietario" min="-2" max="-2" attributes="0"/>
-                                              <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
-                                              <Component id="txtDocumentoPropietario" min="-2" pref="150" max="-2" attributes="0"/>
-                                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                                              <Component id="lblNombre1" min="-2" pref="100" max="-2" attributes="0"/>
-                                          </Group>
-                                      </Group>
+                              <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+                                      <Component id="btnCancelFormPersona" min="-2" pref="129" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
+                                      <Component id="btnCleanFormPersona" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace max="32767" attributes="0"/>
                                   <Group type="103" groupAlignment="1" attributes="0">
-                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                          <Component id="txtNombrePropietario" pref="303" max="32767" attributes="0"/>
-                                          <Component id="txtDescripccionPropietario" max="32767" attributes="0"/>
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                              <Group type="102" alignment="1" attributes="0">
+                                                  <EmptySpace min="-2" pref="118" max="-2" attributes="0"/>
+                                                  <Component id="jcbxTipoPersona" min="-2" pref="184" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" alignment="1" attributes="0">
+                                                  <Component id="lblCategoria1" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace max="32767" attributes="0"/>
+                                                  <Component id="txtTelefonoPersona" min="-2" pref="184" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="lblDescripccionPropietario" min="-2" pref="100" max="-2" attributes="0"/>
                                       </Group>
-                                      <Group type="102" attributes="0">
-                                          <Component id="btnEliminarFormPropietario" min="-2" pref="130" max="-2" attributes="0"/>
-                                          <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
-                                          <Component id="btnSetFormPersona" min="-2" pref="130" max="-2" attributes="0"/>
-                                          <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="lblCedula3" min="-2" pref="112" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="btnBuscarPropietario" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+                                          <Component id="txtDocumentoPropietario" min="-2" pref="150" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="lblNombre1" min="-2" pref="100" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                               </Group>
+                              <Component id="lblTipoDocumento" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="32767" attributes="0"/>
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="btnEliminarFormPropietario" min="-2" pref="130" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
+                                  <Component id="btnSetFormPersona" min="-2" pref="130" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                              </Group>
+                              <Component id="txtNombrePropietario" alignment="0" min="-2" pref="279" max="-2" attributes="0"/>
+                              <Component id="txtDescripccionPropietario" alignment="0" min="-2" pref="330" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <Group type="102" attributes="0">
@@ -135,26 +134,26 @@
                       </Group>
                       <Component id="btnBuscarPropietario" min="-2" pref="25" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="lblDescripccionPropietario" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="txtTelefonoPersona" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
                       <Component id="lblCategoria1" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="lblDescripccionPropietario" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="txtDescripccionPropietario" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="lblTipoDocumento" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jcbxTipoPersona" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="txtDescripccionPropietario" alignment="3" min="-2" pref="82" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="52" max="32767" attributes="0"/>
+                  <EmptySpace pref="33" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="btnCleanFormPersona" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
                       <Component id="btnCancelFormPersona" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
                       <Component id="btnSetFormPersona" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
                       <Component id="btnEliminarFormPropietario" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace min="-2" pref="88" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>

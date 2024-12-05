@@ -6,6 +6,7 @@ import TRANSPORTE.MODELO.TABLES_VIEWS.Model_View_DetallesLicencias;
 import TRANSPORTE.VISTAS.TRANSPORTISTAS.formTransportista;
 import java.awt.event.*;
 import java.util.List;
+
 import javax.swing.table.*;
 
 @SuppressWarnings({"unused", "unchecked", "OverridableMethodCallInConstructor"})
@@ -77,6 +78,7 @@ public class Control_FormPersonas {
             vista.lblTitlePersona.setText("MODIFICAR TRANSPORTISTA");
             vista.lblCategoria3.setVisible(true);
             vista.jcbxEstadoPersona.setVisible(true);
+            vista.jcbxEstadoPersona.setEnabled(true);
 
             Model_Personas trans = new DAO_Personas().getTransportista(idPersona);
 
@@ -121,7 +123,7 @@ public class Control_FormPersonas {
                     vista.txtCorreoPersona.getText(),
                     "V",
                     2,
-                    1);
+                    vista.jcbxEstadoPersona.getSelectedIndex());
         }
 
         if (result >= 1) {
@@ -251,6 +253,7 @@ public class Control_FormPersonas {
 
     }
 
+    
     //ASIGNACION DE EVENTOS
     private void events() {
 

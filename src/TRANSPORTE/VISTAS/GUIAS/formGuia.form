@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
-  <Properties>
-    <Property name="defaultCloseOperation" type="int" value="3"/>
-  </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
     <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
@@ -74,7 +71,7 @@
                                   <EmptySpace min="-2" pref="261" max="-2" attributes="0"/>
                                   <Component id="txtDocumentoPersona5" min="-2" pref="145" max="-2" attributes="0"/>
                               </Group>
-                              <Component id="btnSetFormPersona4" alignment="0" min="-2" pref="145" max="-2" attributes="0"/>
+                              <Component id="btnSearchCliente" alignment="0" min="-2" pref="145" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
                           <Component id="lblNombre3" min="-2" pref="141" max="-2" attributes="0"/>
@@ -96,7 +93,7 @@
                       <Group type="102" alignment="0" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="btnSetFormPersona3" max="32767" attributes="0"/>
+                                  <Component id="btnSearchUnidad" max="32767" attributes="0"/>
                                   <Component id="lblNombre2" min="-2" pref="145" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
@@ -117,7 +114,7 @@
                           </Group>
                           <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="btnSetFormPersona2" pref="145" max="32767" attributes="0"/>
+                              <Component id="btnSearchTransportista" pref="145" max="32767" attributes="0"/>
                               <Component id="lblNombre1" max="32767" attributes="0"/>
                               <Component id="lblNombre5" max="32767" attributes="0"/>
                           </Group>
@@ -134,14 +131,14 @@
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnCancelFormPersona" min="-2" pref="160" max="-2" attributes="0"/>
+                          <Component id="btnCancelFormGuia" min="-2" pref="160" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
-                          <Component id="btnCleanFormPersona" min="-2" pref="160" max="-2" attributes="0"/>
+                          <Component id="btnCleanFormGuia" min="-2" pref="160" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="156" max="-2" attributes="0"/>
-                          <Component id="btnSetFormPersona" min="-2" pref="190" max="-2" attributes="0"/>
+                          <Component id="btnSetFormGuia" min="-2" pref="190" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
-                          <Component id="btnSetFormPersona5" min="-2" pref="145" max="-2" attributes="0"/>
+                          <Component id="btnSearchRuta" min="-2" pref="145" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Component id="lblCedula4" min="-2" pref="82" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
@@ -167,7 +164,7 @@
                   <Component id="lblTitlePersona" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="1" attributes="0">
-                      <Component id="btnSetFormPersona4" min="-2" pref="40" max="-2" attributes="0"/>
+                      <Component id="btnSearchCliente" min="-2" pref="40" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblCedula3" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="lblNombre3" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -186,7 +183,7 @@
                                       <Component id="txtDocumentoPersona3" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
-                              <Component id="btnSetFormPersona3" min="-2" pref="40" max="-2" attributes="0"/>
+                              <Component id="btnSearchUnidad" min="-2" pref="40" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace pref="28" max="32767" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
@@ -195,19 +192,20 @@
                           </Group>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                                  <Component id="lblCedula8" alignment="3" max="32767" attributes="0"/>
-                                  <Component id="txtDocumentoPersona4" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
-                              </Group>
-                              <Component id="btnSetFormPersona2" min="-2" pref="40" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="lblCedula8" alignment="3" max="32767" attributes="0"/>
+                              <Component id="txtDocumentoPersona4" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="lblNombre1" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="txtNombrePersona3" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
                           </Group>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <Component id="btnSearchTransportista" min="-2" pref="40" max="-2" attributes="0"/>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace min="-2" pref="77" max="-2" attributes="0"/>
@@ -221,7 +219,7 @@
                   </Group>
                   <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="1" attributes="0">
-                      <Component id="btnSetFormPersona5" alignment="1" min="-2" pref="40" max="-2" attributes="0"/>
+                      <Component id="btnSearchRuta" alignment="1" min="-2" pref="40" max="-2" attributes="0"/>
                       <Group type="103" alignment="1" groupAlignment="3" attributes="0">
                           <Component id="lblCedula4" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="lblNombre7" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -243,10 +241,10 @@
                   <Component id="lblInfoPersona" min="-2" pref="20" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="btnCancelFormPersona" min="-2" pref="40" max="-2" attributes="0"/>
+                      <Component id="btnCancelFormGuia" min="-2" pref="40" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="btnCleanFormPersona" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
-                          <Component id="btnSetFormPersona" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                          <Component id="btnCleanFormGuia" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                          <Component id="btnSetFormGuia" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
@@ -321,7 +319,7 @@
             <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
           </AuxValues>
         </Component>
-        <Component class="javax.swing.JButton" name="btnCancelFormPersona">
+        <Component class="javax.swing.JButton" name="btnCancelFormGuia">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="0" green="0" red="66" type="rgb"/>
@@ -331,6 +329,9 @@
             </Property>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/img/ligth/iconTrash.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="CANCELAR"/>
             <Property name="horizontalTextPosition" type="int" value="4"/>
@@ -343,7 +344,7 @@
             <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
           </AuxValues>
         </Component>
-        <Component class="javax.swing.JButton" name="btnCleanFormPersona">
+        <Component class="javax.swing.JButton" name="btnCleanFormGuia">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="e6" green="e6" red="e6" type="rgb"/>
@@ -375,7 +376,7 @@
             <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
           </AuxValues>
         </Component>
-        <Component class="javax.swing.JButton" name="btnSetFormPersona">
+        <Component class="javax.swing.JButton" name="btnSetFormGuia">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="99" green="ff" red="99" type="rgb"/>
@@ -397,7 +398,7 @@
             <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
           </AuxValues>
         </Component>
-        <Component class="javax.swing.JButton" name="btnSetFormPersona2">
+        <Component class="javax.swing.JButton" name="btnSearchTransportista">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="e7" type="rgb"/>
@@ -416,13 +417,13 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSetFormPersona2ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSearchTransportistaActionPerformed"/>
           </Events>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
           </AuxValues>
         </Component>
-        <Component class="javax.swing.JButton" name="btnSetFormPersona3">
+        <Component class="javax.swing.JButton" name="btnSearchUnidad">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="e7" type="rgb"/>
@@ -441,7 +442,7 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSetFormPersona3ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSearchUnidadActionPerformed"/>
           </Events>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
@@ -521,7 +522,7 @@
             <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
           </AuxValues>
         </Component>
-        <Component class="javax.swing.JButton" name="btnSetFormPersona4">
+        <Component class="javax.swing.JButton" name="btnSearchCliente">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="e7" type="rgb"/>
@@ -540,7 +541,7 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSetFormPersona4ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSearchClienteActionPerformed"/>
           </Events>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
@@ -777,7 +778,7 @@
             <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
           </AuxValues>
         </Component>
-        <Component class="javax.swing.JButton" name="btnSetFormPersona5">
+        <Component class="javax.swing.JButton" name="btnSearchRuta">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="e7" type="rgb"/>
@@ -796,7 +797,7 @@
             </Property>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSetFormPersona5ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSearchRutaActionPerformed"/>
           </Events>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>

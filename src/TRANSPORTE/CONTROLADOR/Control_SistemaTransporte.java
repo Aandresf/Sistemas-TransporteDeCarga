@@ -20,7 +20,8 @@ public class Control_SistemaTransporte {
         //vista.cbxSedes.setModel(new CCarreras().getSedes());
 
         actions();
-        btnSelected(vista.dashboard, vista.btnMenuDashboard, "/img/ligth/iconDashboard.png");
+        vista.dashboard.setVisible(true);
+        vista.lblLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/iconSistemaHover.png")));
     }
 
     // accion realizada si cambio la sede seleccionada.
@@ -29,18 +30,18 @@ public class Control_SistemaTransporte {
         //int indiceSeleccionado = vista.cbxSedes.getSelectedIndex();
 
         // si el panel de prestamo es visible, asigna la sede a los filtros de tabla.
-        if(vista.prestamos.isShowing()){
+        if(vista.clientes.isShowing()){
 
             //vista.controladorPrestamos.sede = sedeSeleccionada;
             //vista.controladorPrestamos.filterStatePrestamo();
 
         }
 
-        if(vista.libros.isShowing()){
+        if(vista.rutas.isShowing()){
 
         }
 
-        if(vista.sedes.isShowing()){
+        if(vista.transportistas.isShowing()){
            //vista.controladorSedes.sede = sedeSeleccionada;
             //ista.controladorSedes.filterStateSector();
 
@@ -93,43 +94,43 @@ public class Control_SistemaTransporte {
 
     // Asigna el estilo y realiza la accion correspondiente a cada btn seleccionado.
     private void actionBtnsMenu(JLabel btnSelected){
-        
-        // oculto el combobox de seleccion de sede si selecciona el modulo reportes o el de usuario
-        if(vista.btnMenuUsuarios.equals(btnSelected) || vista.btnMenuReportes.equals(btnSelected)){
-           // vista.lblSede.setVisible(false); vista.cbxSedes.setVisible(false);
-        } else { // Muestra el combobox de seleccion de sede si selecciona otro modulo
-            //vista.lblSede.setVisible(true); vista.cbxSedes.setVisible(true);
+
+        if(vista.lblLogo.equals(btnSelected)){
+            vista.dashboard.setVisible(true);
+            vista.lblLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/iconSistemaHover.png")));
+        } else {
+            vista.dashboard.setVisible(false);
+            vista.lblLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/iconSistema.png")));
         }
 
-
         if(vista.btnMenuDashboard.equals(btnSelected)){
-            btnSelected(vista.dashboard, vista.btnMenuDashboard, "/img/ligth/iconDashboard.png");
+            btnSelected(vista.guias, vista.btnMenuDashboard, "/img/ligth/iconGuias.png");
         } else {
-            btnDefault(vista.dashboard, vista.btnMenuDashboard, "/img/iconDashboard.png");
+            btnDefault(vista.guias, vista.btnMenuDashboard, "/img/iconGuias.png");
         }
         
         if(vista.btnMenuPrestamos.equals(btnSelected)){
-            btnSelected(vista.prestamos, vista.btnMenuPrestamos, "/img/ligth/iconTime.png");
+            btnSelected(vista.clientes, vista.btnMenuPrestamos, "/img/ligth/iconUsers.png");
         } else{
-            btnDefault(vista.prestamos, vista.btnMenuPrestamos, "/img/iconTime.png");
+            btnDefault(vista.clientes, vista.btnMenuPrestamos, "/img/iconUsers.png");
         }
         
         if(vista.btnMenuLibros.equals(btnSelected)){
-            btnSelected(vista.libros, vista.btnMenuLibros, "/img/ligth/iconBooks.png");
+            btnSelected(vista.rutas, vista.btnMenuLibros, "/img/ligth/iconPlace.png");
         } else{
-            btnDefault(vista.libros, vista.btnMenuLibros, "/img/iconBooks.png");
+            btnDefault(vista.rutas, vista.btnMenuLibros, "/img/iconPlace.png");
         }
 
         if(vista.btnMenuUsuarios.equals(btnSelected)){
-            btnSelected(vista.usuarios, vista.btnMenuUsuarios, "/img/ligth/iconUsers.png");
+            btnSelected(vista.unidades, vista.btnMenuUsuarios, "/img/ligth/iconUnidades.png");
         } else{
-            btnDefault(vista.usuarios, vista.btnMenuUsuarios, "/img/iconUsers.png");
+            btnDefault(vista.unidades, vista.btnMenuUsuarios, "/img/iconUnidades.png");
         }
         
         if(vista.btnMenuSedes.equals(btnSelected)){
-            btnSelected(vista.sedes, vista.btnMenuSedes, "/img/ligth/iconPlace.png");
+            btnSelected(vista.transportistas, vista.btnMenuSedes, "/img/ligth/iconTransportistas.png");
         } else{
-            btnDefault(vista.sedes, vista.btnMenuSedes, "/img/iconPlace.png");
+            btnDefault(vista.transportistas, vista.btnMenuSedes, "/img/iconTransportistas.png");
         }
         
         if(vista.btnMenuReportes.equals(btnSelected)){
@@ -149,7 +150,7 @@ public class Control_SistemaTransporte {
     //Agrega todas las funcionalidades a la interfaz
     private void actions(){
 
-        // funcionalidad para el combobox de sedes
+        // funcionalidad para el combobox de transportistas
         /*
         vista.cbxSedes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -160,13 +161,17 @@ public class Control_SistemaTransporte {
 
         // funcionalidad del logo
         vista.lblLogo.addMouseListener(new java.awt.event.MouseAdapter() {
+
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                actionBtnsMenu(vista.lblLogo);
+            }
             
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                vista.lblLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/iconLogoHover.png")));
+                vista.lblLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/iconSistemaHover.png")));
             }
             
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                vista.lblLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/iconLogo.png")));
+                vista.lblLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/iconSistema.png")));
             }
         });
 
@@ -192,10 +197,10 @@ public class Control_SistemaTransporte {
                 actionBtnsMenu(vista.btnMenuDashboard);
             }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnHover(vista.btnMenuDashboard, "/img/ligth/iconDashboard.png");
+                btnHover(vista.btnMenuDashboard, "/img/ligth/iconGuias.png");
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnExited(vista.dashboard, vista.btnMenuDashboard, "/img/iconDashboard.png", "/img/ligth/iconDashboard.png");
+                btnExited(vista.guias, vista.btnMenuDashboard, "/img/iconGuias.png", "/img/ligth/iconGuias.png");
             }
         });
 
@@ -204,10 +209,10 @@ public class Control_SistemaTransporte {
                 actionBtnsMenu(vista.btnMenuPrestamos);
             }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnHover(vista.btnMenuPrestamos, "/img/ligth/iconTime.png");
+                btnHover(vista.btnMenuPrestamos, "/img/ligth/iconUsers.png");
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnExited(vista.prestamos, vista.btnMenuPrestamos, "/img/iconTime.png", "/img/ligth/iconTime.png");
+                btnExited(vista.clientes, vista.btnMenuPrestamos, "/img/iconUsers.png", "/img/ligth/iconUsers.png");
             }
         });
 
@@ -216,10 +221,10 @@ public class Control_SistemaTransporte {
                 actionBtnsMenu(vista.btnMenuLibros);
             }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnHover(vista.btnMenuLibros, "/img/ligth/iconBooks.png");
+                btnHover(vista.btnMenuLibros, "/img/ligth/iconPlace.png");
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnExited(vista.libros, vista.btnMenuLibros, "/img/iconBooks.png", "/img/ligth/iconBooks.png");
+                btnExited(vista.rutas, vista.btnMenuLibros, "/img/iconPlace.png", "/img/ligth/iconPlace.png");
             }
         });
 
@@ -228,10 +233,10 @@ public class Control_SistemaTransporte {
                 actionBtnsMenu(vista.btnMenuUsuarios);
             }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnHover(vista.btnMenuUsuarios, "/img/ligth/iconUsers.png");
+                btnHover(vista.btnMenuUsuarios, "/img/ligth/iconUnidades.png");
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnExited(vista.usuarios, vista.btnMenuUsuarios, "/img/iconUsers.png", "/img/ligth/iconUsers.png");
+                btnExited(vista.unidades, vista.btnMenuUsuarios, "/img/iconUnidades.png", "/img/ligth/iconUnidades.png");
             }
         });
 
@@ -240,10 +245,10 @@ public class Control_SistemaTransporte {
                 actionBtnsMenu(vista.btnMenuSedes);
             }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                btnHover(vista.btnMenuSedes, "/img/ligth/iconPlace.png");
+                btnHover(vista.btnMenuSedes, "/img/ligth/iconTransportistas.png");
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                btnExited(vista.sedes, vista.btnMenuSedes, "/img/iconPlace.png", "/img/ligth/iconPlace.png");
+                btnExited(vista.transportistas, vista.btnMenuSedes, "/img/iconTransportistas.png", "/img/ligth/iconTransportistas.png");
             }
         });
 

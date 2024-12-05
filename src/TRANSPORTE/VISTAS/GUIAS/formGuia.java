@@ -18,6 +18,8 @@ public class formGuia extends javax.swing.JFrame {
     public formGuia() {
         initComponents();
         lblInfoPersona.setVisible(false);
+        lblEstatusPersona.setVisible(false);
+        lblControlFormPersona.setVisible(false);
     }
 
     /**
@@ -36,16 +38,16 @@ public class formGuia extends javax.swing.JFrame {
         lblCedula3 = new javax.swing.JLabel();
         lblInfoPersona = new javax.swing.JLabel();
         lblControlFormPersona = new javax.swing.JLabel();
-        btnCancelFormPersona = new javax.swing.JButton();
-        btnCleanFormPersona = new javax.swing.JButton();
-        btnSetFormPersona = new javax.swing.JButton();
-        btnSetFormPersona2 = new javax.swing.JButton();
-        btnSetFormPersona3 = new javax.swing.JButton();
+        btnCancelFormGuia = new javax.swing.JButton();
+        btnCleanFormGuia = new javax.swing.JButton();
+        btnSetFormGuia = new javax.swing.JButton();
+        btnSearchTransportista = new javax.swing.JButton();
+        btnSearchUnidad = new javax.swing.JButton();
         lblCedula6 = new javax.swing.JLabel();
         txtDocumentoPersona3 = new javax.swing.JTextField();
         txtNombrePersona1 = new javax.swing.JTextField();
         lblNombre2 = new javax.swing.JLabel();
-        btnSetFormPersona4 = new javax.swing.JButton();
+        btnSearchCliente = new javax.swing.JButton();
         lblNombre3 = new javax.swing.JLabel();
         lblNombre4 = new javax.swing.JLabel();
         txtNombrePersona2 = new javax.swing.JTextField();
@@ -58,13 +60,11 @@ public class formGuia extends javax.swing.JFrame {
         txtNombrePersona5 = new javax.swing.JTextField();
         lblNombre6 = new javax.swing.JLabel();
         txtNombrePersona6 = new javax.swing.JTextField();
-        btnSetFormPersona5 = new javax.swing.JButton();
+        btnSearchRuta = new javax.swing.JButton();
         lblCedula4 = new javax.swing.JLabel();
         txtDocumentoPersona6 = new javax.swing.JTextField();
         lblNombre7 = new javax.swing.JLabel();
         txtNombrePersona7 = new javax.swing.JTextField();
-
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         pnlUser1.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -88,57 +88,58 @@ public class formGuia extends javax.swing.JFrame {
 
         lblControlFormPersona.setText("1");
 
-        btnCancelFormPersona.setBackground(new java.awt.Color(102, 0, 0));
-        btnCancelFormPersona.setFont(new java.awt.Font("Roboto", 1, 12)); // NOI18N
-        btnCancelFormPersona.setForeground(new java.awt.Color(255, 255, 255));
-        btnCancelFormPersona.setText("CANCELAR");
-        btnCancelFormPersona.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
-        btnCancelFormPersona.setIconTextGap(10);
-        btnCancelFormPersona.setMargin(new java.awt.Insets(2, 1, 3, 14));
+        btnCancelFormGuia.setBackground(new java.awt.Color(102, 0, 0));
+        btnCancelFormGuia.setFont(new java.awt.Font("Roboto", 1, 12)); // NOI18N
+        btnCancelFormGuia.setForeground(new java.awt.Color(255, 255, 255));
+        btnCancelFormGuia.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/ligth/iconTrash.png"))); // NOI18N
+        btnCancelFormGuia.setText("CANCELAR");
+        btnCancelFormGuia.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        btnCancelFormGuia.setIconTextGap(10);
+        btnCancelFormGuia.setMargin(new java.awt.Insets(2, 1, 3, 14));
 
-        btnCleanFormPersona.setBackground(new java.awt.Color(230, 230, 230));
-        btnCleanFormPersona.setFont(new java.awt.Font("Roboto", 1, 12)); // NOI18N
-        btnCleanFormPersona.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/iconMop.png"))); // NOI18N
-        btnCleanFormPersona.setText("LIMPIAR");
-        btnCleanFormPersona.setToolTipText("");
-        btnCleanFormPersona.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
-        btnCleanFormPersona.setIconTextGap(10);
-        btnCleanFormPersona.setMargin(new java.awt.Insets(2, 1, 3, 14));
-        btnCleanFormPersona.setMaximumSize(new java.awt.Dimension(125, 35));
-        btnCleanFormPersona.setMinimumSize(new java.awt.Dimension(125, 35));
-        btnCleanFormPersona.setPreferredSize(new java.awt.Dimension(125, 35));
+        btnCleanFormGuia.setBackground(new java.awt.Color(230, 230, 230));
+        btnCleanFormGuia.setFont(new java.awt.Font("Roboto", 1, 12)); // NOI18N
+        btnCleanFormGuia.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/iconMop.png"))); // NOI18N
+        btnCleanFormGuia.setText("LIMPIAR");
+        btnCleanFormGuia.setToolTipText("");
+        btnCleanFormGuia.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        btnCleanFormGuia.setIconTextGap(10);
+        btnCleanFormGuia.setMargin(new java.awt.Insets(2, 1, 3, 14));
+        btnCleanFormGuia.setMaximumSize(new java.awt.Dimension(125, 35));
+        btnCleanFormGuia.setMinimumSize(new java.awt.Dimension(125, 35));
+        btnCleanFormGuia.setPreferredSize(new java.awt.Dimension(125, 35));
 
-        btnSetFormPersona.setBackground(new java.awt.Color(153, 255, 153));
-        btnSetFormPersona.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
-        btnSetFormPersona.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/iconAdd.png"))); // NOI18N
-        btnSetFormPersona.setText("REGISTRAR");
-        btnSetFormPersona.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
-        btnSetFormPersona.setIconTextGap(10);
-        btnSetFormPersona.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        btnSetFormGuia.setBackground(new java.awt.Color(153, 255, 153));
+        btnSetFormGuia.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        btnSetFormGuia.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/iconAdd.png"))); // NOI18N
+        btnSetFormGuia.setText("REGISTRAR");
+        btnSetFormGuia.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        btnSetFormGuia.setIconTextGap(10);
+        btnSetFormGuia.setMargin(new java.awt.Insets(0, 0, 0, 0));
 
-        btnSetFormPersona2.setBackground(new java.awt.Color(231, 255, 255));
-        btnSetFormPersona2.setFont(new java.awt.Font("Roboto", 1, 10)); // NOI18N
-        btnSetFormPersona2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/iconSearch.png"))); // NOI18N
-        btnSetFormPersona2.setText("TRANSSPORTISTA");
-        btnSetFormPersona2.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
-        btnSetFormPersona2.setIconTextGap(10);
-        btnSetFormPersona2.setMargin(new java.awt.Insets(0, 0, 0, 0));
-        btnSetFormPersona2.addActionListener(new java.awt.event.ActionListener() {
+        btnSearchTransportista.setBackground(new java.awt.Color(231, 255, 255));
+        btnSearchTransportista.setFont(new java.awt.Font("Roboto", 1, 10)); // NOI18N
+        btnSearchTransportista.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/iconSearch.png"))); // NOI18N
+        btnSearchTransportista.setText("TRANSSPORTISTA");
+        btnSearchTransportista.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        btnSearchTransportista.setIconTextGap(10);
+        btnSearchTransportista.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        btnSearchTransportista.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSetFormPersona2ActionPerformed(evt);
+                btnSearchTransportistaActionPerformed(evt);
             }
         });
 
-        btnSetFormPersona3.setBackground(new java.awt.Color(231, 255, 255));
-        btnSetFormPersona3.setFont(new java.awt.Font("Roboto", 1, 12)); // NOI18N
-        btnSetFormPersona3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/iconSearch.png"))); // NOI18N
-        btnSetFormPersona3.setText("UNIDAD");
-        btnSetFormPersona3.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
-        btnSetFormPersona3.setIconTextGap(10);
-        btnSetFormPersona3.setMargin(new java.awt.Insets(0, 0, 0, 0));
-        btnSetFormPersona3.addActionListener(new java.awt.event.ActionListener() {
+        btnSearchUnidad.setBackground(new java.awt.Color(231, 255, 255));
+        btnSearchUnidad.setFont(new java.awt.Font("Roboto", 1, 12)); // NOI18N
+        btnSearchUnidad.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/iconSearch.png"))); // NOI18N
+        btnSearchUnidad.setText("UNIDAD");
+        btnSearchUnidad.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        btnSearchUnidad.setIconTextGap(10);
+        btnSearchUnidad.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        btnSearchUnidad.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSetFormPersona3ActionPerformed(evt);
+                btnSearchUnidadActionPerformed(evt);
             }
         });
 
@@ -164,16 +165,16 @@ public class formGuia extends javax.swing.JFrame {
         lblNombre2.setFont(new java.awt.Font("Roboto Black", 0, 18)); // NOI18N
         lblNombre2.setText("DESCRIPCION");
 
-        btnSetFormPersona4.setBackground(new java.awt.Color(231, 255, 255));
-        btnSetFormPersona4.setFont(new java.awt.Font("Roboto", 1, 12)); // NOI18N
-        btnSetFormPersona4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/iconSearch.png"))); // NOI18N
-        btnSetFormPersona4.setText("CLIENTE");
-        btnSetFormPersona4.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
-        btnSetFormPersona4.setIconTextGap(10);
-        btnSetFormPersona4.setMargin(new java.awt.Insets(0, 0, 0, 0));
-        btnSetFormPersona4.addActionListener(new java.awt.event.ActionListener() {
+        btnSearchCliente.setBackground(new java.awt.Color(231, 255, 255));
+        btnSearchCliente.setFont(new java.awt.Font("Roboto", 1, 12)); // NOI18N
+        btnSearchCliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/iconSearch.png"))); // NOI18N
+        btnSearchCliente.setText("CLIENTE");
+        btnSearchCliente.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        btnSearchCliente.setIconTextGap(10);
+        btnSearchCliente.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        btnSearchCliente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSetFormPersona4ActionPerformed(evt);
+                btnSearchClienteActionPerformed(evt);
             }
         });
 
@@ -242,16 +243,16 @@ public class formGuia extends javax.swing.JFrame {
         txtNombrePersona6.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         txtNombrePersona6.setOpaque(true);
 
-        btnSetFormPersona5.setBackground(new java.awt.Color(231, 255, 255));
-        btnSetFormPersona5.setFont(new java.awt.Font("Roboto", 1, 12)); // NOI18N
-        btnSetFormPersona5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/iconSearch.png"))); // NOI18N
-        btnSetFormPersona5.setText("RUTA");
-        btnSetFormPersona5.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
-        btnSetFormPersona5.setIconTextGap(10);
-        btnSetFormPersona5.setMargin(new java.awt.Insets(0, 0, 0, 0));
-        btnSetFormPersona5.addActionListener(new java.awt.event.ActionListener() {
+        btnSearchRuta.setBackground(new java.awt.Color(231, 255, 255));
+        btnSearchRuta.setFont(new java.awt.Font("Roboto", 1, 12)); // NOI18N
+        btnSearchRuta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/iconSearch.png"))); // NOI18N
+        btnSearchRuta.setText("RUTA");
+        btnSearchRuta.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        btnSearchRuta.setIconTextGap(10);
+        btnSearchRuta.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        btnSearchRuta.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSetFormPersona5ActionPerformed(evt);
+                btnSearchRutaActionPerformed(evt);
             }
         });
 
@@ -298,7 +299,7 @@ public class formGuia extends javax.swing.JFrame {
                             .addGroup(pnlUser1Layout.createSequentialGroup()
                                 .addGap(261, 261, 261)
                                 .addComponent(txtDocumentoPersona5, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(btnSetFormPersona4, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(btnSearchCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(44, 44, 44)
                         .addComponent(lblNombre3, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(10, 10, 10)
@@ -315,7 +316,7 @@ public class formGuia extends javax.swing.JFrame {
                     .addGroup(pnlUser1Layout.createSequentialGroup()
                         .addGroup(pnlUser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(pnlUser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(btnSetFormPersona3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(btnSearchUnidad, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(lblNombre2, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(pnlUser1Layout.createSequentialGroup()
                                 .addContainerGap()
@@ -331,7 +332,7 @@ public class formGuia extends javax.swing.JFrame {
                             .addComponent(lblCedula3, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(44, 44, 44)
                         .addGroup(pnlUser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(btnSetFormPersona2, javax.swing.GroupLayout.DEFAULT_SIZE, 145, Short.MAX_VALUE)
+                            .addComponent(btnSearchTransportista, javax.swing.GroupLayout.DEFAULT_SIZE, 145, Short.MAX_VALUE)
                             .addComponent(lblNombre1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(lblNombre5))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -344,13 +345,13 @@ public class formGuia extends javax.swing.JFrame {
                                 .addComponent(txtDocumentoPersona4))))
                     .addGroup(pnlUser1Layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(btnCancelFormPersona, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnCancelFormGuia, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnCleanFormPersona, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnCleanFormGuia, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(156, 156, 156)
-                        .addComponent(btnSetFormPersona, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(btnSetFormGuia, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(pnlUser1Layout.createSequentialGroup()
-                        .addComponent(btnSetFormPersona5, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnSearchRuta, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(lblCedula4, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(22, 22, 22)
@@ -371,7 +372,7 @@ public class formGuia extends javax.swing.JFrame {
                 .addComponent(lblTitlePersona)
                 .addGap(18, 18, 18)
                 .addGroup(pnlUser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(btnSetFormPersona4, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnSearchCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(pnlUser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(lblCedula3)
                         .addComponent(lblNombre3)
@@ -386,22 +387,23 @@ public class formGuia extends javax.swing.JFrame {
                                 .addGroup(pnlUser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(lblCedula6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(txtDocumentoPersona3, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addComponent(btnSetFormPersona3, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(btnSearchUnidad, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
                         .addGroup(pnlUser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(lblNombre2)
                             .addComponent(txtNombrePersona1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(pnlUser1Layout.createSequentialGroup()
-                        .addGap(6, 6, 6)
-                        .addGroup(pnlUser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(pnlUser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(lblCedula8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(txtDocumentoPersona4, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(btnSetFormPersona2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(21, 21, 21)
+                        .addGap(13, 13, 13)
+                        .addGroup(pnlUser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblCedula8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(txtDocumentoPersona4, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(29, 29, 29)
                         .addGroup(pnlUser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(lblNombre1)
-                            .addComponent(txtNombrePersona3, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(txtNombrePersona3, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(pnlUser1Layout.createSequentialGroup()
+                        .addComponent(btnSearchTransportista, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addGap(77, 77, 77)
                 .addGroup(pnlUser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(txtNombrePersona6)
@@ -411,7 +413,7 @@ public class formGuia extends javax.swing.JFrame {
                         .addComponent(lblNombre6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(63, 63, 63)
                 .addGroup(pnlUser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(btnSetFormPersona5, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnSearchRuta, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(pnlUser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(lblCedula4)
                         .addComponent(lblNombre7)
@@ -428,10 +430,10 @@ public class formGuia extends javax.swing.JFrame {
                 .addComponent(lblInfoPersona, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(pnlUser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnCancelFormPersona, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnCancelFormGuia, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(pnlUser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(btnCleanFormPersona, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(btnSetFormPersona, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(btnCleanFormGuia, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnSetFormGuia, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
 
@@ -455,31 +457,31 @@ public class formGuia extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnSetFormPersona2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSetFormPersona2ActionPerformed
+    private void btnSearchTransportistaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSearchTransportistaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnSetFormPersona2ActionPerformed
+    }//GEN-LAST:event_btnSearchTransportistaActionPerformed
 
-    private void btnSetFormPersona3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSetFormPersona3ActionPerformed
+    private void btnSearchUnidadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSearchUnidadActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnSetFormPersona3ActionPerformed
+    }//GEN-LAST:event_btnSearchUnidadActionPerformed
 
-    private void btnSetFormPersona4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSetFormPersona4ActionPerformed
+    private void btnSearchClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSearchClienteActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnSetFormPersona4ActionPerformed
+    }//GEN-LAST:event_btnSearchClienteActionPerformed
 
-    private void btnSetFormPersona5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSetFormPersona5ActionPerformed
+    private void btnSearchRutaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSearchRutaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnSetFormPersona5ActionPerformed
+    }//GEN-LAST:event_btnSearchRutaActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public javax.swing.JButton btnCancelFormPersona;
-    public javax.swing.JButton btnCleanFormPersona;
-    public javax.swing.JButton btnSetFormPersona;
-    public javax.swing.JButton btnSetFormPersona2;
-    public javax.swing.JButton btnSetFormPersona3;
-    public javax.swing.JButton btnSetFormPersona4;
-    public javax.swing.JButton btnSetFormPersona5;
+    public javax.swing.JButton btnCancelFormGuia;
+    public javax.swing.JButton btnCleanFormGuia;
+    public javax.swing.JButton btnSearchCliente;
+    public javax.swing.JButton btnSearchRuta;
+    public javax.swing.JButton btnSearchTransportista;
+    public javax.swing.JButton btnSearchUnidad;
+    public javax.swing.JButton btnSetFormGuia;
     public javax.swing.JLabel lblCedula3;
     public javax.swing.JLabel lblCedula4;
     public javax.swing.JLabel lblCedula6;

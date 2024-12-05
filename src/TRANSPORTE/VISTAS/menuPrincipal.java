@@ -1,7 +1,10 @@
 
 package TRANSPORTE.VISTAS;
 
+import TRANSPORTE.CONTROLADOR.CLIENTES.Control_Clientes;
+import TRANSPORTE.CONTROLADOR.Control_Dashboard;
 import TRANSPORTE.CONTROLADOR.GUIAS.Control_Guias;
+import TRANSPORTE.CONTROLADOR.RUTAS.Control_Rutas;
 import TRANSPORTE.CONTROLADOR.TRANSPORTISTAS.Control_Transportistas;
 import TRANSPORTE.CONTROLADOR.UNIDADES.Control_Unidades;
 import TRANSPORTE.VISTAS.CLIENTES.mainClientes;
@@ -14,11 +17,12 @@ import java.awt.Point;
 public class menuPrincipal extends javax.swing.JFrame {
     private Point initialClick;
     
-    public mainGuias dashboard;
-    public mainClientes prestamos;
-    public mainRutas libros;
-    public mainUnidades usuarios;
-    public mainTransportistas sedes;
+    public dashboard dashboard;
+    public mainGuias guias;
+    public mainClientes clientes;
+    public mainRutas rutas;
+    public mainUnidades unidades;
+    public mainTransportistas transportistas;
 
     
 
@@ -28,19 +32,23 @@ public class menuPrincipal extends javax.swing.JFrame {
     public menuPrincipal() {
         
         initComponents();
+        btnMenuReportes.setVisible(false);
         
-        dashboard = new Control_Guias(new mainGuias()).vMain;
-        prestamos = new mainClientes();
-        libros = new mainRutas();
-        usuarios = new Control_Unidades(new mainUnidades()).vMain;
-        sedes = new Control_Transportistas(new mainTransportistas()).vista;
+        dashboard = new Control_Dashboard().vista;
+        guias = new Control_Guias(new mainGuias()).vMain;
+        clientes = new Control_Clientes(new mainClientes()).vista;
+        //rutas = new Control_Rutas(new mainRutas()).vMain;
+        rutas = new Control_Rutas(new mainRutas()).vMain;
+        unidades = new Control_Unidades(new mainUnidades()).vMain;
+        transportistas = new Control_Transportistas(new mainTransportistas()).vista;
         
         // Agregamoms al desktopPane
         pnlMain.add(dashboard);
-        pnlMain.add(prestamos);
-        pnlMain.add(libros);
-        pnlMain.add(usuarios);
-        pnlMain.add(sedes);
+        pnlMain.add(guias);
+        pnlMain.add(clientes);
+        pnlMain.add(rutas);
+        pnlMain.add(unidades);
+        pnlMain.add(transportistas);
                 
     }
 
@@ -115,14 +123,15 @@ public class menuPrincipal extends javax.swing.JFrame {
         pnlMenu.setMinimumSize(new java.awt.Dimension(216, 762));
 
         lblLogo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/iconLogo.png"))); // NOI18N
+        lblLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/iconSistema.png"))); // NOI18N
+        lblLogo.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         jSeparator1.setForeground(new java.awt.Color(0, 0, 0));
         jSeparator1.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
 
         btnMenuDashboard.setBackground(new java.awt.Color(230, 255, 255));
         btnMenuDashboard.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
-        btnMenuDashboard.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/iconDashboard.png"))); // NOI18N
+        btnMenuDashboard.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/iconGuias.png"))); // NOI18N
         btnMenuDashboard.setText("GUIAS");
         btnMenuDashboard.setToolTipText("");
         btnMenuDashboard.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -137,7 +146,7 @@ public class menuPrincipal extends javax.swing.JFrame {
 
         btnMenuUsuarios.setBackground(new java.awt.Color(230, 255, 255));
         btnMenuUsuarios.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
-        btnMenuUsuarios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/iconUsers.png"))); // NOI18N
+        btnMenuUsuarios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/iconUnidades.png"))); // NOI18N
         btnMenuUsuarios.setText("UNIDADES");
         btnMenuUsuarios.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnMenuUsuarios.setOpaque(true);
@@ -151,7 +160,7 @@ public class menuPrincipal extends javax.swing.JFrame {
 
         btnMenuSedes.setBackground(new java.awt.Color(230, 255, 255));
         btnMenuSedes.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
-        btnMenuSedes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/iconUsers.png"))); // NOI18N
+        btnMenuSedes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/iconTransportistas.png"))); // NOI18N
         btnMenuSedes.setText("TRANSPORTISTAS");
         btnMenuSedes.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnMenuSedes.setOpaque(true);
@@ -205,9 +214,9 @@ public class menuPrincipal extends javax.swing.JFrame {
                 .addComponent(btnMenuSedes, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btnMenuReportes, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(29, 29, 29)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 44, Short.MAX_VALUE)
                 .addComponent(btnMenuSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(31, Short.MAX_VALUE))
+                .addGap(16, 16, 16))
         );
 
         jPanel1.add(pnlMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 216, 762));

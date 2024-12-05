@@ -38,6 +38,7 @@ public class mainClientes extends javax.swing.JPanel {
         btnSearch2 = new javax.swing.JLabel();
         jScrollPane3 = new javax.swing.JScrollPane();
         tblSedes1 = new javax.swing.JTable();
+        btnRecargar = new javax.swing.JButton();
 
         setMinimumSize(new java.awt.Dimension(684, 694));
         setName("prestamos"); // NOI18N
@@ -82,6 +83,7 @@ public class mainClientes extends javax.swing.JPanel {
         btnDeleteFromTable.setBackground(new java.awt.Color(102, 0, 0));
         btnDeleteFromTable.setFont(new java.awt.Font("Roboto", 1, 12)); // NOI18N
         btnDeleteFromTable.setForeground(new java.awt.Color(255, 255, 255));
+        btnDeleteFromTable.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/ligth/iconTrash.png"))); // NOI18N
         btnDeleteFromTable.setText("ELIMINAR");
         btnDeleteFromTable.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
         btnDeleteFromTable.setIconTextGap(10);
@@ -128,6 +130,10 @@ public class mainClientes extends javax.swing.JPanel {
 
         pnlMain1.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, 980, 490));
 
+        btnRecargar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/iconRefresh.png"))); // NOI18N
+        btnRecargar.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        pnlMain1.add(btnRecargar, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 30, -1, -1));
+
         pnlMain.add(pnlMain1, "card2");
 
         add(pnlMain, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 1000, 660));
@@ -139,6 +145,7 @@ public class mainClientes extends javax.swing.JPanel {
     public javax.swing.JButton btnFormModifyTransportista;
     public javax.swing.JToggleButton btnHeader1;
     public javax.swing.JButton btnModificarSede1;
+    public javax.swing.JButton btnRecargar;
     private javax.swing.JLabel btnSearch2;
     public javax.swing.JCheckBox checkEstado2;
     private javax.swing.JScrollPane jScrollPane3;

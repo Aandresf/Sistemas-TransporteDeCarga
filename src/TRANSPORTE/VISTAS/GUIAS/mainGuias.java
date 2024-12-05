@@ -22,6 +22,10 @@ public class mainGuias extends javax.swing.JPanel {
 
     public mainGuias() {
         initComponents();
+        btnHeader2.setVisible(false);
+        btnHeader3.setVisible(false);
+        btnHeader4.setVisible(false);
+        subHeader1.setVisible(false);
     }
 
     /**
@@ -39,9 +43,6 @@ public class mainGuias extends javax.swing.JPanel {
         btnHeader4 = new javax.swing.JToggleButton();
         pnlMain = new javax.swing.JPanel();
         pnlMain1 = new javax.swing.JPanel();
-        subHeader1 = new javax.swing.JPanel();
-        btnHeader6 = new javax.swing.JToggleButton();
-        btnHeader7 = new javax.swing.JToggleButton();
         subMain1 = new javax.swing.JPanel();
         checkEstado4 = new javax.swing.JCheckBox();
         btnModificarSede3 = new javax.swing.JButton();
@@ -51,6 +52,9 @@ public class mainGuias extends javax.swing.JPanel {
         btnSearch4 = new javax.swing.JLabel();
         jScrollPane4 = new javax.swing.JScrollPane();
         tblSedes2 = new javax.swing.JTable();
+        subHeader1 = new javax.swing.JPanel();
+        btnHeader6 = new javax.swing.JToggleButton();
+        btnHeader7 = new javax.swing.JToggleButton();
         pnlMain2 = new javax.swing.JPanel();
         checkEstado8 = new javax.swing.JCheckBox();
         btnModificarSede7 = new javax.swing.JButton();
@@ -137,32 +141,6 @@ public class mainGuias extends javax.swing.JPanel {
         pnlMain1.setMinimumSize(new java.awt.Dimension(684, 685));
         pnlMain1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        subHeader1.setBackground(new java.awt.Color(255, 255, 255));
-        subHeader1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        btnHeader6.setBackground(new java.awt.Color(239, 255, 255));
-        btnHeader6.setFont(new java.awt.Font("Roboto", 3, 14)); // NOI18N
-        btnHeader6.setText("<html>GESTIONAR<br>UBICACION</html>");
-        btnHeader6.setBorder(null);
-        btnHeader6.setBorderPainted(false);
-        btnHeader6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnHeader6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnHeader6ActionPerformed(evt);
-            }
-        });
-        subHeader1.add(btnHeader6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 196, 55));
-
-        btnHeader7.setBackground(new java.awt.Color(239, 255, 255));
-        btnHeader7.setFont(new java.awt.Font("Roboto", 3, 14)); // NOI18N
-        btnHeader7.setText("<html>GESTIONAR<br>VIATICOS</html>");
-        btnHeader7.setBorder(null);
-        btnHeader7.setBorderPainted(false);
-        btnHeader7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        subHeader1.add(btnHeader7, new org.netbeans.lib.awtextra.AbsoluteConstraints(206, 0, 196, 55));
-
-        pnlMain1.add(subHeader1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 15, 1000, 50));
-
         subMain1.setBackground(new java.awt.Color(255, 255, 255));
         subMain1.setMinimumSize(new java.awt.Dimension(684, 685));
         subMain1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -185,6 +163,7 @@ public class mainGuias extends javax.swing.JPanel {
         btnDeleteFromTable1.setBackground(new java.awt.Color(102, 0, 0));
         btnDeleteFromTable1.setFont(new java.awt.Font("Roboto", 1, 12)); // NOI18N
         btnDeleteFromTable1.setForeground(new java.awt.Color(255, 255, 255));
+        btnDeleteFromTable1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/ligth/iconTrash.png"))); // NOI18N
         btnDeleteFromTable1.setText("ELIMINAR");
         btnDeleteFromTable1.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
         btnDeleteFromTable1.setIconTextGap(10);
@@ -230,7 +209,33 @@ public class mainGuias extends javax.swing.JPanel {
 
         subMain1.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, 980, 410));
 
-        pnlMain1.add(subMain1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, -1, 585));
+        pnlMain1.add(subMain1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 5, -1, 650));
+
+        subHeader1.setBackground(new java.awt.Color(255, 255, 255));
+        subHeader1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        btnHeader6.setBackground(new java.awt.Color(239, 255, 255));
+        btnHeader6.setFont(new java.awt.Font("Roboto", 3, 14)); // NOI18N
+        btnHeader6.setText("<html>GESTIONAR<br>UBICACION</html>");
+        btnHeader6.setBorder(null);
+        btnHeader6.setBorderPainted(false);
+        btnHeader6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnHeader6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnHeader6ActionPerformed(evt);
+            }
+        });
+        subHeader1.add(btnHeader6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 196, 55));
+
+        btnHeader7.setBackground(new java.awt.Color(239, 255, 255));
+        btnHeader7.setFont(new java.awt.Font("Roboto", 3, 14)); // NOI18N
+        btnHeader7.setText("<html>GESTIONAR<br>VIATICOS</html>");
+        btnHeader7.setBorder(null);
+        btnHeader7.setBorderPainted(false);
+        btnHeader7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        subHeader1.add(btnHeader7, new org.netbeans.lib.awtextra.AbsoluteConstraints(206, 0, 196, 55));
+
+        pnlMain1.add(subHeader1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 15, 1000, 50));
 
         pnlMain.add(pnlMain1, "card2");
 

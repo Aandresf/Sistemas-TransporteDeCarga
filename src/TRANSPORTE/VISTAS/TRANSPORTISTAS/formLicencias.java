@@ -4,8 +4,6 @@
  */
 package TRANSPORTE.VISTAS.TRANSPORTISTAS;
 
-import TRANSPORTE.VISTAS.TRANSPORTISTAS.*;
-
 /**
  *
  * @author arnal
@@ -90,6 +88,7 @@ public class formLicencias extends javax.swing.JFrame {
         btnCancelFormPersona.setBackground(new java.awt.Color(102, 0, 0));
         btnCancelFormPersona.setFont(new java.awt.Font("Roboto", 1, 12)); // NOI18N
         btnCancelFormPersona.setForeground(new java.awt.Color(255, 255, 255));
+        btnCancelFormPersona.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/ligth/iconTrash.png"))); // NOI18N
         btnCancelFormPersona.setText("CANCELAR");
         btnCancelFormPersona.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
         btnCancelFormPersona.setIconTextGap(10);

@@ -37,8 +37,8 @@ public class Control_Transportistas {
     public void filterStateTransportistas(){
         // new SistemaBibliotecas().cbxSedes.getSelectedItem().toString()
         if (vista.checkEstado2.isSelected()){
-            filtrarTabla(vista.tblSedes1,vista.txtFilterSede1.getText(),"", "");
-        }else filtrarTabla(vista.tblSedes1,"DISPONIBLE", vista.txtFilterSede1.getText(), "");
+            filtrarTabla(vista.tblSedes1,vista.txtFilterSede1.getText(),"", "NO DISPONIBLE");
+        }else filtrarTabla(vista.tblSedes1,"", vista.txtFilterSede1.getText(), "");
     }
 
     public void deleteTransportista(){
@@ -74,16 +74,9 @@ public class Control_Transportistas {
                 System.out.println("mdify click");
                 int idTrans = Integer.parseInt(vista.tblSedes1.getModel().getValueAt(vista.tblSedes1.getSelectedRow(), 0).toString());
                 Control_FormPersonas frame = new Control_FormPersonas(idTrans);
-                
-                frame.vista.addWindowListener( new WindowAdapter() {
-                    @Override
-                    public void windowDeactivated(WindowEvent e){
-                        showTransportistas();
-                    }
-                });
+             
                 
                 frame.vista.setLocationRelativeTo(vista);
-                frame.loadFormModifyTransportista();
             });
 
             Object[] renglon = {
@@ -99,27 +92,14 @@ public class Control_Transportistas {
         }
 
         vista.tblSedes1.setModel(modelo);
-
-        vista.tblSedes1.addMouseListener(new MouseAdapter() {
-            @Override
-            public void mouseClicked(MouseEvent evt) {
-                int column = vista.tblSedes1.getColumnModel().getColumnIndexAtX(evt.getX());
-                int row = evt.getY() / vista.tblSedes1.getRowHeight();
-
-                if (row < vista.tblSedes1.getRowCount() && row >= 0 && column < vista.tblSedes1.getColumnCount() && column >= 0) {
-                    Object value = vista.tblSedes1.getValueAt(row, column);
-                    if (value instanceof JButton jButton) {
-                        jButton.doClick();
-                    }
-                }
-            }
-        });
+        filterStateTransportistas();
+        
     }
 
  
     // Metodos generales del menu Sedes
 
-    public void filtrarTabla(JTable tabla, String busqueda1, String busqueda2, String sede) {
+    public void filtrarTabla(JTable tabla, String busqueda1, String busqueda2, String disponible) {
     
         // Creamos el TableRowSorter y asiganamos a la tabla
         TableRowSorter<TableModel> filtro = new TableRowSorter<>(tabla.getModel());
@@ -138,9 +118,17 @@ public class Control_Transportistas {
             filtros.add(RowFilter.regexFilter("(?i)" + busqueda2));
         }
 
-        // Agregamos el segundo filtro
-        if (!sede.equals("TODAS")) {
-            filtros.add(RowFilter.regexFilter("(?i)" + sede));
+        RowFilter<Object, Object> filtroNoDisponble = new RowFilter<Object, Object>() { 
+            @Override 
+            public boolean include(Entry<? extends Object, ? extends Object> entry) { 
+                //int columnIndex = tabla.getColumnModel().getColumnIndex(4); 
+                String value = entry.getStringValue(4); 
+                return !value.equalsIgnoreCase("NO DISPONIBLE"); 
+            } 
+        };
+
+        if (!disponible.equals("NO DISPONIBLE")) {
+            filtros.add(filtroNoDisponble);
         }
 
         // Combinamos los filtros y los asignamos.
@@ -169,6 +157,21 @@ public class Control_Transportistas {
 
     //Metodo de asignacion de funciones
     private void actions(){
+        
+        vista.tblSedes1.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent evt) {
+                int column = vista.tblSedes1.getColumnModel().getColumnIndexAtX(evt.getX());
+                int row = evt.getY() / vista.tblSedes1.getRowHeight();
+
+                if (row < vista.tblSedes1.getRowCount() && row >= 0 && column < vista.tblSedes1.getColumnCount() && column >= 0) {
+                    Object value = vista.tblSedes1.getValueAt(row, column);
+                    if (value instanceof JButton jButton) {
+                        jButton.doClick();
+                    }
+                }
+            }
+        });
 
         vista.txtFilterSede1.addKeyListener(new KeyAdapter() {
             @Override
@@ -181,7 +184,6 @@ public class Control_Transportistas {
             }
         });
 
-/*
         vista.btnFormModifyTransportista.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent evt) {
@@ -198,6 +200,7 @@ public class Control_Transportistas {
             }
         });
         
+/*
         vista.btnDeleteFromTable.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent evt) {
@@ -225,7 +228,7 @@ public class Control_Transportistas {
         });
 
         vista.checkEstado2.addItemListener((ItemEvent) -> {
-            
+            filterStateTransportistas();
         });
 
         vista.btnHeader1.addActionListener((evt) -> {
@@ -233,6 +236,11 @@ public class Control_Transportistas {
         });
         vista.btnHeader2.addActionListener((evt) -> {
             btnSelectPanel(vista.btnHeader2);
+        });
+        
+        vista.btnRecargar.addActionListener((evt) -> {
+            showTransportistas();
+            System.out.println("Transportistas Recargados");
         });
 
     }

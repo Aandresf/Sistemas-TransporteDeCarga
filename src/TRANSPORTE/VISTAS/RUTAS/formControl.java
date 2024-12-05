@@ -70,7 +70,7 @@ public class formControl extends javax.swing.JFrame {
         txtNombrePersona.setOpaque(true);
 
         lblCedula3.setFont(new java.awt.Font("Roboto Black", 0, 18)); // NOI18N
-        lblCedula3.setText("LATITUD");
+        lblCedula3.setText("COORD. X");
 
         txtDocumentoPersona.setBackground(new java.awt.Color(250, 250, 250));
         txtDocumentoPersona.setForeground(new java.awt.Color(0, 0, 0));
@@ -116,7 +116,7 @@ public class formControl extends javax.swing.JFrame {
         btnSetFormPersona.setMargin(new java.awt.Insets(0, 0, 0, 0));
 
         lblCedula4.setFont(new java.awt.Font("Roboto Black", 0, 18)); // NOI18N
-        lblCedula4.setText("LONGITUD");
+        lblCedula4.setText("COORD. Y");
 
         txtDocumentoPersona1.setBackground(new java.awt.Color(250, 250, 250));
         txtDocumentoPersona1.setForeground(new java.awt.Color(0, 0, 0));

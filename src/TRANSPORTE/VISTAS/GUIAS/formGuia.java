@@ -20,6 +20,8 @@ public class formGuia extends javax.swing.JFrame {
         lblInfoPersona.setVisible(false);
         lblEstatusPersona.setVisible(false);
         lblControlFormPersona.setVisible(false);
+        lblCodigoUnidad.setVisible(false);
+        lblCodigoUnidad1.setVisible(false);
     }
 
     /**
@@ -65,6 +67,8 @@ public class formGuia extends javax.swing.JFrame {
         txtDocumentoPersona6 = new javax.swing.JTextField();
         lblNombre7 = new javax.swing.JLabel();
         txtNombrePersona7 = new javax.swing.JTextField();
+        lblCodigoUnidad = new javax.swing.JLabel();
+        lblCodigoUnidad1 = new javax.swing.JLabel();
 
         pnlUser1.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -278,33 +282,14 @@ public class formGuia extends javax.swing.JFrame {
         txtNombrePersona7.setEnabled(false);
         txtNombrePersona7.setOpaque(true);
 
+        lblCodigoUnidad.setText("jLabel1");
+
+        lblCodigoUnidad1.setText("jLabel1");
+
         javax.swing.GroupLayout pnlUser1Layout = new javax.swing.GroupLayout(pnlUser1);
         pnlUser1.setLayout(pnlUser1Layout);
         pnlUser1Layout.setHorizontalGroup(
             pnlUser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnlUser1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(pnlUser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblInfoPersona, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(pnlUser1Layout.createSequentialGroup()
-                        .addComponent(lblTitlePersona, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addContainerGap())
-                    .addGroup(pnlUser1Layout.createSequentialGroup()
-                        .addComponent(lblNombre4, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(txtNombrePersona2)
-                        .addGap(6, 6, 6))
-                    .addGroup(pnlUser1Layout.createSequentialGroup()
-                        .addGroup(pnlUser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(pnlUser1Layout.createSequentialGroup()
-                                .addGap(261, 261, 261)
-                                .addComponent(txtDocumentoPersona5, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(btnSearchCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(44, 44, 44)
-                        .addComponent(lblNombre3, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(txtNombrePersona4)
-                        .addContainerGap())))
             .addGroup(pnlUser1Layout.createSequentialGroup()
                 .addGroup(pnlUser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(pnlUser1Layout.createSequentialGroup()
@@ -361,6 +346,34 @@ public class formGuia extends javax.swing.JFrame {
                         .addGap(10, 10, 10)
                         .addComponent(txtNombrePersona7)))
                 .addContainerGap())
+            .addGroup(pnlUser1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(pnlUser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblInfoPersona, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(pnlUser1Layout.createSequentialGroup()
+                        .addComponent(lblTitlePersona, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addContainerGap())
+                    .addGroup(pnlUser1Layout.createSequentialGroup()
+                        .addComponent(lblNombre4, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(txtNombrePersona2)
+                        .addGap(6, 6, 6))
+                    .addGroup(pnlUser1Layout.createSequentialGroup()
+                        .addGroup(pnlUser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(pnlUser1Layout.createSequentialGroup()
+                                .addGap(261, 261, 261)
+                                .addComponent(txtDocumentoPersona5, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(btnSearchCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(44, 44, 44)
+                        .addComponent(lblNombre3, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(10, 10, 10)
+                        .addComponent(txtNombrePersona4)
+                        .addContainerGap())
+                    .addGroup(pnlUser1Layout.createSequentialGroup()
+                        .addGroup(pnlUser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblCodigoUnidad)
+                            .addComponent(lblCodigoUnidad1))
+                        .addGap(0, 0, Short.MAX_VALUE))))
         );
         pnlUser1Layout.setVerticalGroup(
             pnlUser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -378,7 +391,9 @@ public class formGuia extends javax.swing.JFrame {
                         .addComponent(lblNombre3)
                         .addComponent(txtDocumentoPersona5, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(txtNombrePersona4, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(66, 66, 66)
+                .addGap(44, 44, 44)
+                .addComponent(lblCodigoUnidad)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(pnlUser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(pnlUser1Layout.createSequentialGroup()
                         .addGroup(pnlUser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -411,7 +426,9 @@ public class formGuia extends javax.swing.JFrame {
                     .addGroup(pnlUser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(lblNombre5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(lblNombre6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(63, 63, 63)
+                .addGap(41, 41, 41)
+                .addComponent(lblCodigoUnidad1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(pnlUser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(btnSearchRuta, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(pnlUser1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -486,6 +503,8 @@ public class formGuia extends javax.swing.JFrame {
     public javax.swing.JLabel lblCedula4;
     public javax.swing.JLabel lblCedula6;
     public javax.swing.JLabel lblCedula8;
+    public javax.swing.JLabel lblCodigoUnidad;
+    public javax.swing.JLabel lblCodigoUnidad1;
     public javax.swing.JLabel lblControlFormPersona;
     public javax.swing.JLabel lblEstatusPersona;
     public javax.swing.JLabel lblInfoPersona;

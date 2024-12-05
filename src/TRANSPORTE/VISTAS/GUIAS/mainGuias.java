@@ -26,6 +26,8 @@ public class mainGuias extends javax.swing.JPanel {
         btnHeader3.setVisible(false);
         btnHeader4.setVisible(false);
         subHeader1.setVisible(false);
+        btnDeleteFromTable1.setVisible(false);
+        btnModificarSede3.setVisible(false);
     }
 
     /**
@@ -44,7 +46,6 @@ public class mainGuias extends javax.swing.JPanel {
         pnlMain = new javax.swing.JPanel();
         pnlMain1 = new javax.swing.JPanel();
         subMain1 = new javax.swing.JPanel();
-        checkEstado4 = new javax.swing.JCheckBox();
         btnModificarSede3 = new javax.swing.JButton();
         btnDeleteFromTable1 = new javax.swing.JButton();
         btnLoadForm = new javax.swing.JButton();
@@ -144,9 +145,6 @@ public class mainGuias extends javax.swing.JPanel {
         subMain1.setBackground(new java.awt.Color(255, 255, 255));
         subMain1.setMinimumSize(new java.awt.Dimension(684, 685));
         subMain1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        checkEstado4.setText("NO DISPONIBLE");
-        subMain1.add(checkEstado4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, -1, -1));
 
         btnModificarSede3.setFont(new java.awt.Font("Roboto", 1, 12)); // NOI18N
         btnModificarSede3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/iconTableEdit.png"))); // NOI18N
@@ -551,7 +549,6 @@ public class mainGuias extends javax.swing.JPanel {
     private javax.swing.JLabel btnSearch6;
     private javax.swing.JLabel btnSearch7;
     private javax.swing.JLabel btnSearch8;
-    public javax.swing.JCheckBox checkEstado4;
     public javax.swing.JCheckBox checkEstado5;
     public javax.swing.JCheckBox checkEstado6;
     public javax.swing.JCheckBox checkEstado7;
